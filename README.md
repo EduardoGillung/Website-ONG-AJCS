@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -67,3 +68,7 @@ export default tseslint.config([
   },
 ])
 ```
+=======
+# Website-ONG-UJCS
+Website institucional desenvolvido para apresentar a trajetória, missão e objetivos da ONG, destacando seus projetos em andamento e futuros, reconhecimentos importantes como o Prêmio Unicef, além de depoimentos inspiradores de beneficiários e apoiadores.
+>>>>>>> 354c39656fe1b9f14028005da23cc291a78db050
