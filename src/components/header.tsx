@@ -1,77 +1,60 @@
 import { Link } from "react-router-dom";
-import { useState, useEffect, useRef } from "react";
-import { MobileNav } from "./navigation/mobileNav";
 
+import { useState, useEffect } from "react";
+import { MobileNav } from "./navigation/mobileNav";
 
 const Header = () => {
   const navigationItems = [
-    { to: "/", label: "Sobre min" },
-    { to: "/aboutUs", label: "Projetos" },
-    { to: "/contact", label: "Contato" },
+    { to: "/", label: "Pagina Inicial" },
+    { to: "/aboutUs", label: "Sobre nós" },
+    { to: "/contact", label: "Entrar em contato" },
   ];
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [showHeader, setShowHeader] = useState(true);
-  const lastScrollY = useRef(0);
-
+  const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      if (currentScrollY < 40) {
-        setShowHeader(true);
-      } else if (currentScrollY > lastScrollY.current) {
-        setShowHeader(false); // Scroll down, hide
-      } else {
-        setShowHeader(true); // Scroll up, show
-      }
-      lastScrollY.current = currentScrollY;
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    const onScroll = () => setScrolled(window.scrollY > 10);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
     <header
-      className={`w-full bg-transparent sticky top-0 z-50 transition-transform duration-300 ${showHeader ? 'translate-y-0' : '-translate-y-full'}`}
+      className={`fixed top-0 left-0 w-full z-50 bg-[#042A4C]/90 backdrop-blur-md transition-shadow duration-300 border-b ${scrolled ? "shadow-lg border-[#2A99E7]/20" : "border-transparent shadow-none"}`}
     >
-      <div className="container mx-auto max-w-6xl h-24 px-4 grid grid-cols-3 items-center">
-        {/* Logo - centralizado no mobile, à esquerda no desktop */}
-        <div className="col-span-1 flex justify-center md:justify-start">
-          <Link to="/" className="group flex flex-col items-center md:items-start relative">
-            <span className="absolute inset-0 w-full h-full bg-black rounded-2xl z-0" style={{pointerEvents: 'none'}} />
-            <span className="text-2xl transition-colors text-slate-200 font-semibold leading-none z-10">Eduardo</span>
-            <span className="text-2xl transition-colors text-slate-200 font-semibold leading-none z-10">Gillung</span>
-          </Link>
-        </div>
+      <div className="container mx-auto px-4 max-w-6xl flex items-center justify-between h-24">
+        {/* Logo */}
+        <Link to="/" className="flex items-center space-x-3 group">
+          <span className="text-xl font-bold transition-colors">
+            <span className="bg-gradient-to-t from-[#00DAA7] to-[#00E1FF] bg-clip-text text-transparent font-semibold">Nome </span> 
+            <span className="text-cyan-50 font-semibold">Empresa</span>
+          </span>
+        </Link>
 
-        {/* Navigation (desktop) - permanece centralizada */}
-        <div className="hidden md:flex w-full h-full items-center justify-center col-span-1">
+        {/* Navigation */}
+        <nav className="hidden md:flex items-center space-x-8">
+          {navigationItems.map((item) => (
+            <Link
+              key={item.to}
+              to={item.to}
+              className="text-cyan-50 hover:text-cyan-400 font-medium transition-colors relative group"
+            >
+              {item.label}
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-t from-[#00DAA7] to-[#00E1FF] group-hover:w-full transition-all duration-300"></span>
+            </Link>
+          ))}
+        </nav>
 
-            <nav className="flex justify-center items-center space-x-8">
-              {navigationItems.map((item) => (
-                <Link
-                  key={item.to}
-                  to={item.to}
-                  className="text-slate-200 transition-all duration-200 transform hover:scale-110 hover:text-red-500"
-                >
-                  {item.label}
-                </Link>
-              ))}
-            </nav>
-        </div>
-
-        {/* Mobile Menu Button - totalmente à direita no mobile */}
-        <div className="col-span-1 flex justify-end">
-          <button
-            className="md:hidden p-2 rounded-lg text-slate-300 hover:bg-cyan-300 hover:text-cyan-500 transition-colors"
-            onClick={() => setMobileMenuOpen(true)}
-            aria-label="Abrir menu"
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-        </div>
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden p-2 rounded-lg text-slate-500 hover:bg-cyan-300 hover:text-cyan-100 transition-colors"
+          onClick={() => setMobileMenuOpen(true)}
+          aria-label="Abrir menu"
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
       </div>
 
       {/* Mobile Navigation */}
