@@ -1,74 +1,52 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Website-ONG-Associação de Juventudes Construindo Sonhos
+Website institucional desenvolvido para apresentar a trajetória, missão e objetivos da ONG, destacando seus projetos em andamento e futuros, reconhecimentos importantes como o Prêmio Unicef, além de depoimentos inspiradores de beneficiários e apoiadores.
 ```
 =======
-# Website-ONG-UJCS
-Website institucional desenvolvido para apresentar a trajetória, missão e objetivos da ONG, destacando seus projetos em andamento e futuros, reconhecimentos importantes como o Prêmio Unicef, além de depoimentos inspiradores de beneficiários e apoiadores.
->>>>>>> 354c39656fe1b9f14028005da23cc291a78db050
+
+## Tecnologias
+
+- **React 19** - Biblioteca JavaScript para interfaces
+- **TypeScript** - Tipagem estática
+- **Tailwind CSS** - Framework CSS utilitário
+- **React Router** - Roteamento da aplicação
+- **Vite** - Build tool e dev server
+
+## 🛠️ Como Executar
+
+1. **Instalar dependências**:
+
+   ```bash
+   npm install
+   ```
+
+2. **Executar em desenvolvimento**:
+
+   ```bash
+   npm run dev
+   ```
+
+3. **Build para produção**:
+   ```bash
+   npm run build
+   ```
+
+O projeto é totalmente responsivo com breakpoints:
+
+- **Mobile**: < 768px
+- **Tablet**: 768px - 1024px
+- **Desktop**: > 1024px
+
+### Tailwind CSS
+
+- Configuração customizada em `tailwind.config.js`
+- Classes utilitárias personalizadas
+- Sistema de cores consistente
+
+### PostCSS
+
+- Autoprefixer para compatibilidade
+- Processamento otimizado
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
