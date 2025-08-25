@@ -5,24 +5,31 @@ import Projects from '../sections/projects';
 
 const Home = () => {
   return (
-    <div className="w-full scroll-smooth snap-y snap-mandatory">
-      <section className="min-h-screen bg-transparent snap-start">
+    <div className="w-full">
+      {/* Seção Intro */}
+      <section className="min-h-screen">
         <Intro />
       </section>
-      <div className="w-full h-8 bg-transparent" />
-      <section className="min-h-screen bg-transparent snap-start">
-        <Projects/>
+
+      {/* Seção Projetos */}
+      <section className="min-h-screen py-20">
+        <div className="max-w-6xl mx-auto px-6">
+          <Projects />
+        </div>
       </section>
-      <div className="w-full h-8 bg-transparent" />
-      <section className="min-h-screen bg-transparent snap-start">
-        <About />
+
+      {/* Seção Sobre */}
+      <section className="min-h-screen py-20">
+        <div className="max-w-6xl mx-auto px-6">
+          <About />
+        </div>
       </section>
-      <div className="w-full h-8 bg-transparent" />
-      <section className="min-h-screen bg-transparent snap-start">
-        <Contact />
-      </section>
-      <div className="w-full h-8 bg-transparent" />
-      <section className="min-h-screen bg-transparent snap-start">
+
+      {/* Seção Contato */}
+      <section className="min-h-screen py-20">
+        <div className="max-w-6xl mx-auto px-6">
+          <Contact />
+        </div>
       </section>
     </div>
   );
