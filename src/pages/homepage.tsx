@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Intro from '../sections/intro';
 import About from '../sections/about';
 import Contact from '../sections/contact';

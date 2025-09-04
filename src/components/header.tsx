@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { MobileNav } from "./navigation/mobileNav";
 import Logo from "../assets/Logo.png";

@@ -22,3 +22,20 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Video files (large files)
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wmv
+*.flv
+*.webm
+
+# Backup files
+*-backup.*
+*-original.*
+
+# Keep only optimized videos
+!public/video-background.mp4
+!public/video-background.webm
