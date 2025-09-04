@@ -20,8 +20,8 @@ const Intro = () => {
           if (fallback) fallback.style.display = 'block';
         }}
       >
-        <source src="/video-background.mp4" type="video/mp4" />
-        <source src="/video-background.webm" type="video/webm" />
+        <source src="/video-intro.mp4" type="video/mp4" />
+        <source src="/video-intro.webm" type="video/webm" />
         Seu navegador não suporta vídeos.
       </video>
 
