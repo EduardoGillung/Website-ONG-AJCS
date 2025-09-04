@@ -49,48 +49,41 @@ const Partners = () => {
   const categories = ["Todos", "Educação", "Saúde", "Infraestrutura", "Alimentação", "Social"];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black">
-      {/* Hero Section */}
-      <div className="pt-32 pb-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center space-y-8">
-            <h1 className="text-6xl lg:text-7xl font-bold text-white">
-              <span className="text-yellow-400">Nossos</span> Parceiros
-            </h1>
+    <div className="min-h-screen flex items-center justify-center bg-[#000928]">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center space-y-12">
+          {/* Título da seção */}
+          <div className="space-y-4">
+            <h2 className="text-5xl lg:text-6xl font-bold text-white">
+              <span className="text-yellow-400">Nossos</span> Colaboradores
+            </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-500 mx-auto rounded-full"></div>
             <p className="text-xl text-yellow-400/80 max-w-3xl mx-auto">
               Conheça as empresas e organizações que fazem parte da nossa rede de solidariedade. 
               Juntos, construímos um futuro melhor para todos.
             </p>
           </div>
-        </div>
-      </div>
 
-      {/* Stats Section */}
-      <div className="max-w-6xl mx-auto px-6 pb-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="text-center p-8 bg-gradient-to-r from-yellow-400/10 to-yellow-500/10 border border-yellow-400/20 rounded-2xl">
-            <div className="text-4xl font-bold text-yellow-400 mb-2">20+</div>
-            <div className="text-white/80">Parceiros Ativos</div>
+          {/* Stats Section */}
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="text-center p-8 bg-gradient-to-r from-yellow-400/10 to-yellow-500/10 border border-yellow-400/20 rounded-2xl">
+              <div className="text-4xl font-bold text-yellow-400 mb-2">20+</div>
+              <div className="text-white/80">Parceiros Ativos</div>
+            </div>
+            <div className="text-center p-8 bg-gradient-to-r from-yellow-400/10 to-yellow-500/10 border border-yellow-400/20 rounded-2xl">
+              <div className="text-4xl font-bold text-yellow-400 mb-2">5</div>
+              <div className="text-white/80">Categorias</div>
+            </div>
+            <div className="text-center p-8 bg-gradient-to-r from-yellow-400/10 to-yellow-500/10 border border-yellow-400/20 rounded-2xl">
+              <div className="text-4xl font-bold text-yellow-400 mb-2">50+</div>
+              <div className="text-white/80">Projetos Realizados</div>
+            </div>
+            <div className="text-center p-8 bg-gradient-to-r from-yellow-400/10 to-yellow-500/10 border border-yellow-400/20 rounded-2xl">
+              <div className="text-4xl font-bold text-yellow-400 mb-2">1000+</div>
+              <div className="text-white/80">Vidas Impactadas</div>
+            </div>
           </div>
-          <div className="text-center p-8 bg-gradient-to-r from-yellow-400/10 to-yellow-500/10 border border-yellow-400/20 rounded-2xl">
-            <div className="text-4xl font-bold text-yellow-400 mb-2">5</div>
-            <div className="text-white/80">Categorias</div>
-          </div>
-          <div className="text-center p-8 bg-gradient-to-r from-yellow-400/10 to-yellow-500/10 border border-yellow-400/20 rounded-2xl">
-            <div className="text-4xl font-bold text-yellow-400 mb-2">50+</div>
-            <div className="text-white/80">Projetos Realizados</div>
-          </div>
-          <div className="text-center p-8 bg-gradient-to-r from-yellow-400/10 to-yellow-500/10 border border-yellow-400/20 rounded-2xl">
-            <div className="text-4xl font-bold text-yellow-400 mb-2">1000+</div>
-            <div className="text-white/80">Vidas Impactadas</div>
-          </div>
-        </div>
-      </div>
 
-      {/* Partners Grid */}
-      <div className="max-w-6xl mx-auto px-6 pb-20">
-        <div className="space-y-12">
           {/* Filter Categories */}
           <div className="flex flex-wrap justify-center gap-4">
             {categories.map((category, index) => (
@@ -138,26 +131,26 @@ const Partners = () => {
               </div>
             ))}
           </div>
-        </div>
-      </div>
 
-      {/* CTA Section */}
-      <div className="max-w-6xl mx-auto px-6 pb-20">
-        <div className="text-center space-y-8 p-12 bg-gradient-to-r from-yellow-400/10 to-yellow-500/10 border border-yellow-400/20 rounded-3xl">
-          <h2 className="text-4xl font-bold text-white">
-            <span className="text-yellow-400">Quer ser nosso parceiro?</span>
-          </h2>
-          <p className="text-xl text-yellow-400/80 max-w-2xl mx-auto">
-            Junte-se à nossa rede de solidariedade e ajude-nos a transformar mais vidas. 
-            Entre em contato e descubra como podemos trabalhar juntos.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black font-bold px-8 py-4 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-yellow-400/25 transform hover:-translate-y-1">
-              Seja um Parceiro
-            </button>
-            <button className="border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black font-bold px-8 py-4 rounded-xl transition-all duration-300">
-              Entre em Contato
-            </button>
+          {/* CTA Section */}
+          <div className="pt-8">
+            <div className="text-center space-y-8 p-12 bg-gradient-to-r from-yellow-400/10 to-yellow-500/10 border border-yellow-400/20 rounded-3xl">
+              <h3 className="text-3xl font-bold text-white">
+                <span className="text-yellow-400">Quer ser nosso parceiro?</span>
+              </h3>
+              <p className="text-lg text-yellow-400/80 max-w-2xl mx-auto">
+                Junte-se à nossa rede de solidariedade e ajude-nos a transformar mais vidas. 
+                Entre em contato e descubra como podemos trabalhar juntos.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <button className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black font-bold px-8 py-4 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-yellow-400/25 transform hover:-translate-y-1">
+                  Seja um Parceiro
+                </button>
+                <button className="border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black font-bold px-8 py-4 rounded-xl transition-all duration-300">
+                  Entre em Contato
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

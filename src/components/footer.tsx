@@ -96,9 +96,17 @@ const Footer = () => {
 
         {/* Linha de Copyright */}
         <div className="border-t border-yellow-400/20 mt-12 pt-8 text-center">
-          <p className="text-yellow-400/60 text-sm">
+          <p className="text-yellow-400/60 text-sm mb-4">
             &copy; 2025 Construindo Sonhos. Todos os direitos reservados.
           </p>
+          <div className="flex justify-center space-x-6">
+            <Link 
+              to="/privacy" 
+              className="text-yellow-400/60 hover:text-yellow-400 transition-colors duration-300 text-sm"
+            >
+              Política de Privacidade
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

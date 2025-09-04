@@ -27,7 +27,7 @@ const Contact = () => {
   ];
 
   return (
-    <div className="min-h-screen flex items-center justify-center">
+    <div className="min-h-screen flex items-center justify-center bg-[#000928]">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center space-y-12">
           {/* Título da seção */}

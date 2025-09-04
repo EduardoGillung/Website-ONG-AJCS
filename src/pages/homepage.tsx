@@ -1,35 +1,104 @@
+import React, { useState, useEffect } from 'react';
 import Intro from '../sections/intro';
 import About from '../sections/about';
 import Contact from '../sections/contact';
 import Projects from '../sections/projects';
+import Partners from '../sections/partners';
+import Transparency from '../sections/transparency';
+import Donate from '../sections/donate';
 
 const Home = () => {
+  const [activeSection, setActiveSection] = useState('intro');
+
+  const sections = [
+    { id: 'intro', label: 'Início' },
+    { id: 'sobre', label: 'Quem Somos' },
+    { id: 'projetos', label: 'Projetos' },
+    { id: 'colaboradores', label: 'Colaboradores' },
+    { id: 'contato', label: 'Contato' },
+    { id: 'transparencia', label: 'Transparência' },
+    { id: 'doar', label: 'Doar' }
+  ];
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 100;
+      
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const element = document.getElementById(sections[i].id);
+        if (element && element.offsetTop <= scrollPosition) {
+          setActiveSection(sections[i].id);
+          break;
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <div className="w-full">
+    <div className="w-full relative">
+      {/* Botões de Navegação Flutuantes */}
+      <div className="fixed right-6 top-1/2 transform -translate-y-1/2 z-40 space-y-3">
+        {sections.map((section) => (
+          <button
+            key={section.id}
+            onClick={() => scrollToSection(section.id)}
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              activeSection === section.id
+                ? 'bg-yellow-400 scale-125 shadow-lg shadow-yellow-400/50'
+                : 'bg-white/60 hover:bg-white/80 hover:scale-110'
+            }`}
+            title={section.label}
+            aria-label={`Ir para seção ${section.label}`}
+          />
+        ))}
+      </div>
+
       {/* Seção Intro */}
-      <section className="min-h-screen">
+      <section id="intro" className="min-h-screen">
         <Intro />
       </section>
 
-      {/* Seção Projetos */}
-      <section className="min-h-screen py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <Projects />
-        </div>
+      {/* Seção Sobre */}
+      <section id="sobre" className="min-h-screen">
+        <About />
       </section>
 
-      {/* Seção Sobre */}
-      <section className="min-h-screen py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <About />
-        </div>
+      {/* Seção Projetos */}
+      <section id="projetos" className="min-h-screen">
+        <Projects />
+      </section>
+
+      {/* Seção Colaboradores */}
+      <section id="colaboradores" className="min-h-screen">
+        <Partners />
       </section>
 
       {/* Seção Contato */}
-      <section className="min-h-screen py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <Contact />
-        </div>
+      <section id="contato" className="min-h-screen">
+        <Contact />
+      </section>
+
+      {/* Seção Transparência */}
+      <section id="transparencia" className="min-h-screen">
+        <Transparency />
+      </section>
+
+      {/* Seção Doar */}
+      <section id="doar" className="min-h-screen">
+        <Donate />
       </section>
     </div>
   );
