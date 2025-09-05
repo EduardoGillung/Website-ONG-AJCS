@@ -1,4 +1,3 @@
-import React from 'react';
 
 // Template para criar novos projetos
 // Copie este arquivo e personalize conforme necessário
@@ -30,7 +29,7 @@ interface ProjectTemplateProps {
   }>;
 }
 
-const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
+const ProjectTemplate = ({
   title,
   description,
   icon,
@@ -40,14 +39,13 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
   duration,
   location,
   highlights,
-  image,
   budget,
   team,
   goals,
   achievements,
   gallery,
   testimonials
-}) => {
+}: ProjectTemplateProps) => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black">
       {/* Hero Section */}
@@ -180,7 +178,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
               <div>
                 <h2 className="text-3xl font-bold text-yellow-400 mb-6">Galeria</h2>
                 <div className="grid grid-cols-2 gap-4">
-                  {gallery.map((image, index) => (
+                  {gallery.map((_, index) => (
                     <div key={index} className="aspect-square bg-yellow-400/10 rounded-xl flex items-center justify-center">
                       <span className="text-4xl">📷</span>
                     </div>

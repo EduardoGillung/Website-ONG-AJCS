@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const Donate = () => {
   const [selectedAmount, setSelectedAmount] = useState('50');
