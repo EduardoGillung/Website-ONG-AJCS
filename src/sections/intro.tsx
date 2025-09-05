@@ -2,7 +2,6 @@
 const Intro = () => {
   return (
     <section className="relative h-[70vh] lg:h-[80vh] w-full overflow-hidden">
-      {/* ==== VÍDEO DE FUNDO OTIMIZADO ==== */}
       <video
         autoPlay
         loop
