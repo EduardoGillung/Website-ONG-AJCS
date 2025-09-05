@@ -18,7 +18,6 @@ const Intro = () => {
       {/* Camada de escurecimento otimizada */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60"></div>
 
-      {/* ==== CONTEÚDO PRINCIPAL ==== */}
       <div className="relative z-10 flex flex-col justify-center h-full px-4 sm:px-8 md:px-16 lg:px-32 xl:px-64">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-yellow-400 drop-shadow-lg leading-tight font-livvic text-center lg:text-left">
           <span className="block">Juventudes</span>
