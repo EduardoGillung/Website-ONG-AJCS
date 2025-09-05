@@ -42,12 +42,12 @@ Write-Host "" -ForegroundColor White
 Write-Host "🎥 PARA O VÍDEO (video-intro.mp4):" -ForegroundColor Yellow
 Write-Host "   - Use FFmpeg para comprimir:" -ForegroundColor White
 Write-Host "   - Comando: ffmpeg -i video-intro.mp4 -c:v libx264 -crf 28 -preset medium -vf scale=1280:720 video-intro-optimized.mp4" -ForegroundColor White
-Write-Host "   - Meta: reduzir de $([math]::Round($videoSize, 2)) MB para < 10MB" -ForegroundColor White
+Write-Host "   - Meta: reduzir para menos de 10MB" -ForegroundColor White
 Write-Host "" -ForegroundColor White
 Write-Host "🖼️ PARA O LOGO (Logo.png):" -ForegroundColor Yellow
 Write-Host "   - Use https://squoosh.app/ para comprimir" -ForegroundColor White
 Write-Host "   - Ou converta para SVG se possível" -ForegroundColor White
-Write-Host "   - Meta: reduzir de $([math]::Round($logoSize, 2)) KB para < 100KB" -ForegroundColor White
+Write-Host "   - Meta: reduzir para menos de 100KB" -ForegroundColor White
 Write-Host "" -ForegroundColor White
 
 # 4. VERIFICAR FFMPEG
@@ -70,4 +70,4 @@ Write-Host "   - Logo: https://convertio.co/png-svg/" -ForegroundColor White
 
 Write-Host "" -ForegroundColor White
 Write-Host "✅ Backup criado! Agora otimize os arquivos e substitua os originais." -ForegroundColor Green
-Write-Host "🎯 Meta: Vídeo < 10MB, Logo < 100KB" -ForegroundColor Yellow
+Write-Host "🎯 Meta: Vídeo menos de 10MB, Logo menos de 100KB" -ForegroundColor Yellow
