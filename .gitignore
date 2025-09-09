@@ -36,6 +36,3 @@ dist-ssr
 *-backup.*
 *-original.*
 
-# Keep only optimized videos
-!public/video-background.mp4
-!public/video-background.webm
