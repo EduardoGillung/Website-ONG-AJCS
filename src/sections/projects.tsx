@@ -36,7 +36,7 @@ const Projects = () => {
   };
 
   return (
-    <section className="bg-[#171E37] mt-10">
+    <section className="bg-[#171E37] mt-16">
     <div className="mx-auto px-6 max-w-5xl flex justify-center lg:justify-center  mb-10">
       <div
         className="bg-[#C94300] text-white text-2xl md:text-3xl font-bold px-12 py-4 rounded-lg shadow-md max-w-md w-full text-center"
