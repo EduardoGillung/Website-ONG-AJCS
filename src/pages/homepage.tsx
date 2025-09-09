@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { motion, easeInOut } from "framer-motion"; // Importe easeInOut
 import Intro from "../sections/intro";
 import About from "../sections/about";
 import Contact from "../sections/contact";
@@ -49,15 +48,9 @@ const Home = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // Definição das variantes de animação
-  const sectionVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: easeInOut } },
-  };
-
   return (
-    <div className="w-full relative" style={{ scrollSnapType: "y mandatory", height: "100vh", overflowY: "auto" }}>
-      {/* Botões de Navegação Flutuantes (única tabbar) */}
+    <div className="w-full relative">
+      {/* Botões de Navegação Flutuantes */}
       <div className="fixed right-6 top-1/2 transform -translate-y-1/2 z-40 space-y-3">
         {sections.map((section) => (
           <button
@@ -75,88 +68,39 @@ const Home = () => {
       </div>
 
       {/* Seção Intro */}
-      <motion.section
-        id="intro"
-        className="min-h-screen snap-start"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
-        variants={sectionVariants}
-      >
+      <section id="intro" className="min-h-screen">
         <Intro />
-      </motion.section>
+      </section>
 
       {/* Seção Sobre */}
-      <motion.section
-        id="sobre"
-        className="min-h-screen snap-start"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
-        variants={sectionVariants}
-      >
+      <section id="sobre" className="min-h-screen">
         <About />
-      </motion.section>
+      </section>
 
       {/* Seção Projetos */}
-      <motion.section
-        id="projetos"
-        className="min-h-screen snap-start"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
-        variants={sectionVariants}
-      >
+      <section id="projetos" className="min-h-screen">
         <Projects />
-      </motion.section>
+      </section>
 
       {/* Seção Colaboradores */}
-      <motion.section
-        id="colaboradores"
-        className="min-h-screen snap-start"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
-        variants={sectionVariants}
-      >
+      <section id="colaboradores" className="min-h-screen">
         <Partners />
-      </motion.section>
+      </section>
 
       {/* Seção Contato */}
-      <motion.section
-        id="contato"
-        className="min-h-screen snap-start"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
-        variants={sectionVariants}
-      >
+      <section id="contato" className="min-h-screen">
         <Contact />
-      </motion.section>
+      </section>
 
       {/* Seção Transparência */}
-      <motion.section
-        id="transparencia"
-        className="min-h-screen snap-start"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
-        variants={sectionVariants}
-      >
+      <section id="transparencia" className="min-h-screen">
         <Transparency />
-      </motion.section>
+      </section>
 
       {/* Seção Doar */}
-      <motion.section
-        id="doar"
-        className="min-h-screen snap-start"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
-        variants={sectionVariants}
-      >
+      <section id="doar" className="min-h-screen">
         <Donate />
-      </motion.section>
+      </section>
     </div>
   );
 };
