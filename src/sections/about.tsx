@@ -1,18 +1,18 @@
+import capoeiraImg2 from "../assets/Capoeira-AJCS6.png";
 
 const About = () => {
   return (
     <>
-      {/* ==== SEÇÃO QUEM SOMOS ==== */}
-      <section className="bg-[#000928] relative">
-        {/* Red Banner */}
-        <div className="relative">
-          <div className="bg-[#D21528] h-24 flex items-center">
-            <div className="container mx-auto px-6 max-w-7xl">
-              <h2 className="text-white text-4xl font-bold">Quem somos</h2>
-            </div>
+      <section className="bg-[#171E37] mt-10 ">
+        <div className="mx-auto px-6 max-w-7xl flex justify-center lg:justify-start">
+          <div
+            className="bg-[#D21528] text-white text-2xl md:text-3xl font-bold px-12 py-4 rounded-lg shadow-md max-w-md w-full text-center"
+            style={{
+              boxShadow: "0 4px 15px rgba(210, 21, 40, 0.3), 0 0 20px rgba(210, 21, 40, 0.1)",
+            }}
+          >
+            Quem somos
           </div>
-          {/* Pointed left edge */}
-          <div className="absolute top-0 right-0 w-0 h-0 border-l-[100px] border-l-[#D21528] border-t-[96px] border-t-transparent"></div>
         </div>
 
         {/* Main Content */}
@@ -23,15 +23,12 @@ const About = () => {
               <p className="text-lg leading-relaxed">
                 Fundada em 16 de setembro de 2005 através do grupo de lideranças jovens remanescentes do projeto Fórum Engenho de Sonhos de Combate a Pobreza (2000-2005), que foi financiado pela Fundação W. K. Kellogg.
               </p>
-              
               <p className="text-lg leading-relaxed">
                 A <strong>AJCS</strong> nasce como resultado do protagonismo juvenil investido pelas ações do Engenho de Sonhos e foi membro da Frente Parlamentar Municipal em Defesa dos Direitos da Criança e do Adolescente de Natal (2006).
               </p>
-              
               <p className="text-lg leading-relaxed">
                 Desenvolvimento de diversos projetos sociais, educativos, desportivos e culturais na região Oeste de Natal, promovendo o desenvolvimento dos jovens e seus grupos, atuando em parcerias junto a entidades locais, comunitárias, empresas privadas e entes públicos.
               </p>
-              
               <p className="text-lg leading-relaxed">
                 Sua Diretoria é colegiada e atua em rede para melhor construir seus projetos e resultados que impactam na realidade social.
               </p>
@@ -39,55 +36,11 @@ const About = () => {
 
             {/* Image */}
             <div className="flex justify-center lg:justify-end">
-              <div className="w-full max-w-md">
-                <div className="bg-white/10 rounded-xl p-4 backdrop-blur-sm">
-                  <div className="w-full h-80 bg-gradient-to-br from-[#41559E]/20 to-[#000928]/40 rounded-lg flex items-center justify-center">
-                    <div className="text-center text-white/60">
-                      <svg className="w-16 h-16 mx-auto mb-4" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                      </svg>
-                      <p className="text-sm">Imagem dos jovens em atividade</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ==== SEÇÃO ESTATÍSTICAS ==== */}
-      <section className="bg-[#000928] py-16">
-        <div className="container mx-auto px-6 max-w-7xl">
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* First Stat */}
-            <div className="text-center">
-              <div className="w-24 h-24 mx-auto mb-4 bg-gradient-to-br from-[#41559E]/20 to-[#000928]/40 rounded-full flex items-center justify-center">
-                <div className="text-[#FFE100] text-3xl">🏆</div>
-              </div>
-              <div className="w-16 h-2 bg-[#FFE100] mx-auto mb-4 rounded-full"></div>
-              <div className="text-[#FFE100] text-5xl font-bold mb-2">+200</div>
-              <div className="text-white text-lg">Realizações</div>
-            </div>
-
-            {/* Second Stat */}
-            <div className="text-center">
-              <div className="w-24 h-24 mx-auto mb-4 bg-gradient-to-br from-[#41559E]/20 to-[#000928]/40 rounded-full flex items-center justify-center">
-                <div className="text-[#FFE100] text-3xl">🎉</div>
-              </div>
-              <div className="w-16 h-2 bg-[#FFE100] mx-auto mb-4 rounded-full"></div>
-              <div className="text-[#FFE100] text-5xl font-bold mb-2">15</div>
-              <div className="text-white text-lg">Eventos realizados</div>
-            </div>
-
-            {/* Third Stat */}
-            <div className="text-center">
-              <div className="w-24 h-24 mx-auto mb-4 bg-gradient-to-br from-[#41559E]/20 to-[#000928]/40 rounded-full flex items-center justify-center">
-                <div className="text-[#FFE100] text-3xl">👥</div>
-              </div>
-              <div className="w-16 h-2 bg-[#FFE100] mx-auto mb-4 rounded-full"></div>
-              <div className="text-[#FFE100] text-5xl font-bold mb-2">+3508</div>
-              <div className="text-white text-lg">Realizações</div>
+              <img
+                src={capoeiraImg2}
+                alt="Atividade da AJCS"
+                className="w-full max-w-md h-64 md:h-80 object-cover rounded-xl shadow-lg"
+              />
             </div>
           </div>
         </div>
@@ -147,7 +100,7 @@ const About = () => {
             <h2 className="text-4xl font-bold text-[#000928] mb-4">Nossa História</h2>
             <div className="w-24 h-1 bg-[#D21528] mx-auto"></div>
           </div>
-          
+
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="space-y-6">
@@ -160,7 +113,7 @@ const About = () => {
                     <p className="text-gray-600">Início do Fórum Engenho de Sonhos de Combate a Pobreza, financiado pela Fundação W. K. Kellogg.</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-[#41559E] rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-white font-bold">2005</span>
@@ -170,7 +123,7 @@ const About = () => {
                     <p className="text-gray-600">Fundação da Associação Juventude Construindo Sonhos em 16 de setembro.</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-[#FFE100] rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-[#000928] font-bold">2006</span>
@@ -182,7 +135,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="bg-gradient-to-br from-[#41559E]/10 to-[#000928]/10 rounded-xl p-8">
               <h3 className="text-2xl font-bold text-[#000928] mb-4">Legado de Impacto</h3>
               <p className="text-gray-600 leading-relaxed mb-6">
@@ -202,15 +155,6 @@ const About = () => {
           </div>
         </div>
       </section>
-
-      {/* Curved White Shape at Bottom */}
-      <div className="bg-[#000928] relative">
-        <div className="absolute top-0 left-0 w-full">
-          <svg viewBox="0 0 1200 120" fill="white" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,0 C300,40 600,20 1200,0 L1200,120 L0,120 Z"/>
-          </svg>
-        </div>
-      </div>
     </>
   );
 };

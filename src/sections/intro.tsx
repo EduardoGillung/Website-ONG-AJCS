@@ -1,7 +1,7 @@
 
 const Intro = () => {
   return (
-    <section className="relative h-[70vh] lg:h-[80vh] w-full overflow-hidden">
+    <section className="relative min-h-screen w-full pt-24">
       <video
         autoPlay
         loop
@@ -9,7 +9,7 @@ const Intro = () => {
         playsInline
         preload="metadata"
         className="absolute top-0 left-0 w-full h-full object-cover"
-        style={{ objectPosition: 'center 20%' }}
+ 
       >
         <source src="/video-intro.mp4" type="video/mp4" />
         Seu navegador não suporta vídeos.
@@ -47,12 +47,7 @@ const Intro = () => {
         </div>
       </div>
 
-      {/* Indicador de scroll */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
-        <div className="w-6 h-10 border-2 border-yellow-400 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-yellow-400 rounded-full mt-2 animate-bounce"></div>
-        </div>
-      </div>
+
     </section>
   );
 };
