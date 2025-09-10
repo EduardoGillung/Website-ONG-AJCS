@@ -45,7 +45,7 @@ const Contact = () => {
   ];
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#000928] py-12">
+    <div className="min-h-screen flex items-center justify-center bg-[#000928] py-24 ">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-10">
           {/* Título da seção */}

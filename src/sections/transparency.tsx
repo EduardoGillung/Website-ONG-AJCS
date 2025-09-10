@@ -6,9 +6,9 @@ const Transparency = () => {
   };
 
   return (
-    <section className="bg-[#000928] min-h-screen flex items-center justify-center py-20">
+    <section className="bg-transparent min-h-screen flex items-center justify-center mb-24">
       <div className="container mx-auto px-6 max-w-6xl text-center">
-        <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-12 border border-white/10 shadow-2xl">
+        <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-9 border border-white/10 shadow-2xl">
           {/* Ícone de Transparência */}
           <div className="w-24 h-24 mx-auto mb-8 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center shadow-lg">
             <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">

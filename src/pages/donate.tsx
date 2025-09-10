@@ -1,11 +1,13 @@
 
 import { Box, Card, Typography, Button } from "@mui/material";
+import { useNavigate } from 'react-router-dom'
 
-
-
-export default function Donate() {
-
-
+export default function LoginErrorAuth() {
+  const navigate = useNavigate();
+  
+  const handleRedirect = () => {
+    navigate("/login-form");
+  };
 
   return (
     <Box
@@ -36,8 +38,6 @@ export default function Donate() {
         }}
       >
 
-
-        {/* Mensagem de erro */}
         <Typography
           variant="h5"
           sx={{
@@ -50,7 +50,7 @@ export default function Donate() {
           Sua sessão expirou!
         </Typography>
 
-        {/* Mensagem secundária */}
+
         <Typography
           variant="body1"
           sx={{
@@ -62,10 +62,10 @@ export default function Donate() {
           Por segurança, você foi desconectado. Clique abaixo para fazer login novamente.
         </Typography>
 
-        {/* Botão de ação */}
         <Button
           variant="contained"
           color="error"
+          onClick={handleRedirect}
           sx={{
             paddingX: "24px",
             paddingY: "8px",

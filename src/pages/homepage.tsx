@@ -23,9 +23,13 @@ const Home = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({
+      const headerOffset = 400;
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - headerOffset;
+  
+      window.scrollTo({
+        top: offsetPosition,
         behavior: "smooth",
-        block: "start",
       });
     }
   };
@@ -73,32 +77,32 @@ const Home = () => {
       </section>
 
       {/* Seção Sobre */}
-      <section id="sobre" className="min-h-screen">
+      <section id="sobre" className="min-h-screen scroll-mt-24">
         <About />
       </section>
 
       {/* Seção Projetos */}
-      <section id="projetos" className="min-h-screen">
+      <section id="projetos" className="min-h-screen scroll-mt-24">
         <Projects />
       </section>
 
       {/* Seção Colaboradores */}
-      <section id="colaboradores" className="min-h-screen">
+      <section id="colaboradores" className="min-h-screen scroll-mt-24">
         <Partners />
       </section>
 
-      {/* Seção Contato */}
-      <section id="contato" className="min-h-screen">
-        <Contact />
-      </section>
-
       {/* Seção Transparência */}
-      <section id="transparencia" className="min-h-screen">
+        <section id="transparencia" className="min-h-screen scroll-mt-24">
         <Transparency />
       </section>
 
+      {/* Seção Contato */}
+      <section id="contato" className="min-h-screen scroll-mt-24">
+        <Contact />
+      </section>
+
       {/* Seção Doar */}
-      <section id="doar" className="min-h-screen">
+      <section id="doar" className="min-h-screen scroll-mt-24">
         <Donate />
       </section>
     </div>

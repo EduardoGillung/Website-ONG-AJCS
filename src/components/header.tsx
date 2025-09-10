@@ -7,8 +7,8 @@ const Header = () => {
     { to: "#sobre", label: "Quem somos" },
     { to: "#projetos", label: "Projetos sociais" },
     { to: "#colaboradores", label: "Colaboradores" },
-    { to: "#contato", label: "Contato" },
     { to: "#transparencia", label: "Transparência" },
+    { to: "#contato", label: "Contato" },
   ];
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

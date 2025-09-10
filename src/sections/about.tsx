@@ -6,7 +6,7 @@ import figuraSobrenos3 from "../assets/figura-sobrenos3.png";
 const About = () => {
   return (
     <>
-      <section className="bg-[#171E37] mt-10 ">
+      <section className="bg-transparent mt-10 ">
         <div className="mx-auto px-6 max-w-7xl flex justify-center lg:justify-start">
           <div
             className="bg-[#D21528] text-white text-2xl md:text-3xl font-bold px-12 py-4 rounded-lg shadow-md max-w-md w-full text-center"
