@@ -34,7 +34,7 @@ const Projects = () => {
     setCurrent((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
 
   return (
-    <section className="bg-[#171E37] py-16">
+    <section className="py-16">
       {/* Título */}
       <h2
         className="mx-auto max-w-md text-center bg-[#C94300] text-white text-2xl md:text-3xl font-bold px-12 py-4 rounded-lg shadow-md mb-12"

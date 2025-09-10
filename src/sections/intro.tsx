@@ -15,7 +15,7 @@ const Intro = () => {
       </video>
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/50"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60"></div>
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
@@ -34,7 +34,9 @@ const Intro = () => {
         <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
           <button
             onClick={() => document.getElementById('sobre')?.scrollIntoView({ behavior: 'smooth' })}
-            className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-6 py-3 sm:px-8 sm:py-4 rounded-xl transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
+            className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-6 py-3 sm:px-8 sm:py-4
+            rounded-xl transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
+            style={{ boxShadow: "0 4px 15px rgba(255, 193, 7, 0.15), 0 0 20px rgba(255, 215, 0, 0.25)" }}
             aria-label="Conheça nossa história"
           >
             Conheça Nossa História
@@ -42,6 +44,7 @@ const Intro = () => {
           <button
             onClick={() => document.getElementById('doar')?.scrollIntoView({ behavior: 'smooth' })}
             className="border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black font-bold px-6 py-3 sm:px-8 sm:py-4 rounded-xl transition-all duration-300 transform hover:-translate-y-1"
+            style={{ boxShadow: "0 4px 15px rgba(255, 193, 7, 0.15), 0 0 20px rgba(255, 215, 0, 0.25)" }}
             aria-label="Faça uma doação"
           >
             Faça uma Doação

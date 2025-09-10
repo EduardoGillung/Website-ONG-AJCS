@@ -1,28 +1,4 @@
 const Donate = () => {
-  const contactInfo = [
-    {
-      icon: "📞",
-      title: "Telefone",
-      info: "(11) 99777-6658",
-      link: "tel:+5511997776658",
-      ariaLabel: "Ligar para (11) 99777-6658 para informações sobre doações",
-    },
-    {
-      icon: "📱",
-      title: "WhatsApp",
-      info: "(11) 99777-6658",
-      link: "https://wa.me/5511997776658",
-      ariaLabel: "Enviar mensagem no WhatsApp para informações sobre doações",
-    },
-    {
-      icon: "📧",
-      title: "Email",
-      info: "doacoes@construindosonhos.org",
-      link: "mailto:doacoes@construindosonhos.org",
-      ariaLabel: "Enviar email para doacoes@construindosonhos.org",
-    },
-  ];
-
   const donationMethods = [
     {
       title: "Transferência Bancária",
@@ -46,7 +22,7 @@ const Donate = () => {
   ];
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#000928] via-[#1a1f3a] to-[#000928] py-12">
+    <div className="min-h-screen flex items-center justify-center py-12">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-12">
           {/* Título da seção */}
@@ -55,7 +31,7 @@ const Donate = () => {
               <span className="text-yellow-400">Faça a</span> Diferença
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-yellow-400 to-yellow-500 mx-auto rounded-full"></div>
-            <p className="text-lg sm:text-xl text-yellow-400/80 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto">
               Sua doação transforma vidas e ajuda a construir um futuro melhor. Entre em contato para saber como contribuir!
             </p>
           </div>
@@ -65,7 +41,7 @@ const Donate = () => {
             {impactStats.map((stat, index) => (
               <div
                 key={index}
-                className="p-5 bg-gradient-to-r from-yellow-400/10 to-yellow-500/10 border border-yellow-400/20 rounded-lg hover:shadow-lg hover:shadow-yellow-400/20 transition-all duration-300"
+                className="p-4"
               >
                 <div className="text-3xl sm:text-4xl mb-2">{stat.icon}</div>
                 <div className="text-2xl sm:text-3xl font-bold text-yellow-400 mb-1">{stat.number}</div>
@@ -93,30 +69,7 @@ const Donate = () => {
             </div>
           </div>
 
-          {/* Informações de Contato */}
-          <div className="space-y-6">
-            <h3 className="text-xl sm:text-2xl font-bold text-yellow-400">Fale com a Coordenadora de Doações</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
-              {contactInfo.map((contact, index) => (
-                <a
-                  key={index}
-                  href={contact.link}
-                  target={contact.link.startsWith("http") ? "_blank" : "_self"}
-                  rel={contact.link.startsWith("http") ? "noopener noreferrer" : ""}
-                  aria-label={contact.ariaLabel}
-                  className="flex items-center space-x-4 p-5 bg-gradient-to-r from-yellow-400/10 to-yellow-500/10 border border-yellow-400/30 rounded-lg hover:border-yellow-400/50 hover:shadow-lg hover:shadow-yellow-400/20 transition-all duration-300 group"
-                >
-                  <div className="text-3xl transform group-hover:scale-110 transition-transform duration-300">
-                    {contact.icon}
-                  </div>
-                  <div className="text-left">
-                    <div className="text-yellow-400 font-semibold text-lg">{contact.title}</div>
-                    <div className="text-white/90 text-sm sm:text-base">{contact.info}</div>
-                  </div>
-                </a>
-              ))}
-            </div>
-          </div>
+          
 
           {/* CTA Adicional */}
           <div className="space-y-6">
