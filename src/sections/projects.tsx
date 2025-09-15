@@ -35,7 +35,7 @@ const Projects = () => {
     setCurrent((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
 
   return (
-    <section className="pt-16 pb-[clamp(100px,12vw,220px)] relative overflow-hidden bg-gradient-to-br from-[#000928] via-[#1a1f3a] to-[#000928] pt-24">
+    <section className="pb-[clamp(200px,24vw,340px)] relative overflow-hidden bg-[#171E37] pt-28">
       {/* Título */}
       <h2
         className="mx-auto max-w-md text-center bg-[#C94300] text-white text-2xl md:text-3xl font-bold px-12 py-4 rounded-lg shadow-md mb-12 leading-tight font-livvic"
@@ -48,7 +48,7 @@ const Projects = () => {
       </h2>
 
       {/* Conteúdo */}
-      <div className="relative max-w-5xl mx-auto flex items-center justify-center">
+      <div className="relative max-w-5xl mx-auto flex items-center justify-center py-16">
         {/* Botão anterior */}
         <button
           onClick={prevSlide}

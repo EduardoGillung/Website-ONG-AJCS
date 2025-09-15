@@ -6,7 +6,7 @@ const Transparency = () => {
   };
 
   return (
-    <section className="bg-gradient-to-br from-[#000928] via-[#1a1f3a] to-[#000928] min-h-screen flex items-center justify-center pt-24 pb-24">
+    <section className="bg-[#171E37] min-h-screen flex items-center justify-center pt-24 pb-24">
       <div className="container mx-auto px-6 max-w-6xl text-center">
         <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-9 border border-white/10 shadow-2xl">
           {/* Ícone de Transparência */}

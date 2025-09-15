@@ -9,16 +9,9 @@ const AppRouter = () => {
     <BrowserRouter>
       <MainLayout>
         <Routes>
-          {/* Landing Page Principal */}
           <Route path="/" element={<Home />} />
-          
-          {/* Página de Doação */}
           <Route path="/donate" element={<DonatePage />} />
-          
-          {/* Página de Política de Privacidade */}
           <Route path="/privacy" element={<Privacy />} />
-          
-          {/* Redirecionar todas as outras rotas para a landing page */}
           <Route path="*" element={<Home />} />
         </Routes>
       </MainLayout>

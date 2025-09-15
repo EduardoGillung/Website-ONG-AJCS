@@ -47,7 +47,7 @@ const ProjectTemplate = ({
   testimonials
 }: ProjectTemplateProps) => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black">
+    <div className="min-h-screen bg-[#171E37]">
       {/* Hero Section */}
       <div className="pt-32 pb-20">
         <div className="max-w-6xl mx-auto px-6">

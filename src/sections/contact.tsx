@@ -47,7 +47,7 @@ const Contact = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-br from-[#000928] via-[#1a1f3a] to-[#000928] min-h-screen flex items-center justify-center pt-24">
+    <div className="bg-[#171E37] min-h-screen flex items-center justify-center pt-24">
         <div className="text-center space-y-10">
           {/* Título da seção */}
           <div className="space-y-5">

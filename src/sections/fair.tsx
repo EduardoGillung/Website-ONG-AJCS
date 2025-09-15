@@ -2,7 +2,7 @@ import LogoFeira from "../assets/logo-feira.png";
 
 const Fair = () => {
   return (
-    <section className="bg-white py-16">
+    <section className="bg-white">
       <div className="mx-auto px-6 max-w-7xl flex items-center justify-center gap-4 sm:gap-6 md:gap-8">
         {/* Logo à esquerda, fora do componente vermelho */}
         <img
@@ -13,7 +13,7 @@ const Fair = () => {
 
         {/* Componente vermelho com o título */}
         <div
-          className="bg-[#D21528] text-white rounded-lg shadow-md px-6 sm:px-8 md:px-10 py-4"
+          className="bg-[#D21528] text-white rounded-lg shadow-md px-6 sm:px-8 md:px-10 py-6"
           style={{
             boxShadow: "0 4px 15px rgba(210, 21, 40, 0.3), 0 0 20px rgba(210, 21, 40, 0.1)",
           }}
@@ -25,6 +25,13 @@ const Fair = () => {
             Mãos de Potengi
           </h2>
         </div>
+      </div>
+      
+      {/* Descrição da Feira */}
+      <div className="mx-auto px-6 max-w-7xl mt-16">
+        <p className="text-#171E37 text-center text-base md:text-lg leading-relaxed">
+          Criada pela Associação de Juventudes Construindo Sonhos (AJCS), a Feira é mais do que um evento, é um movimento de valorização das identidades locais, geração de renda e fortalecimento das redes criativas que transformam o dia a dia dos bairros e territórios.
+        </p>
       </div>
     </section>
   );

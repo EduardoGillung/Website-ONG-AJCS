@@ -6,7 +6,7 @@ import figuraSobrenos3 from "../assets/figura-sobrenos3.png";
 const About = () => {
   return (
     <>
-      <section className="bg-gradient-to-br from-[#000928] via-[#1a1f3a] to-[#000928] pt-24">
+      <section className="bg-[#171E37] pt-24">
         <div className="mx-auto px-6 max-w-7xl flex justify-center lg:justify-start">
           <div
             className="bg-[#D21528] text-white text-2xl md:text-3xl font-bold px-12 py-4 rounded-lg shadow-md max-w-md w-full text-center leading-tight font-livvic"
@@ -38,11 +38,11 @@ const About = () => {
               </p>
             </div>
 
-            <div className="flex justify-center lg:justify-end">
+            <div className="flex justify-center lg:justify-start lg:ml-4 items-start">
               <img
                 src={capoeiraImg2}
                 alt="Atividade da AJCS"
-                className="w-full max-w-md h-64 md:h-80 object-cover rounded-xl shadow-lg"
+                className="w-full max-w-lg h-72 md:h-96 object-cover rounded-xl shadow-lg"
               />
             </div>
           </div>
@@ -51,7 +51,7 @@ const About = () => {
 
       {/* ==== SEÇÃO MISSÃO, VISÃO E VALORES ==== */}
 
-        <div className="container mx-auto px-6 max-w-7xl">
+        <div className="container mx-auto px-6 max-w-7xl py-24">
 
           <div className="grid lg:grid-cols-3 gap-8">
             {/* Missão com figura-sobrenos */}
