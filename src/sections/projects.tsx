@@ -38,7 +38,7 @@ const Projects = () => {
     <section className="pb-[clamp(200px,24vw,340px)] relative overflow-hidden bg-[#171E37] pt-28">
       {/* Título */}
       <h2
-        className="mx-auto max-w-md text-center bg-[#C94300] text-white text-2xl md:text-3xl font-bold px-12 py-4 rounded-lg shadow-md mb-12 leading-tight font-livvic"
+        className="mx-auto max-w-lg text-center bg-[#C94300] text-white text-3xl md:text-4xl font-bold px-16 py-6 rounded-lg shadow-md mb-12 leading-tight font-livvic"
         style={{
           boxShadow:
             "0 4px 15px rgba(201, 67, 0, 0.4), 0 0 20px rgba(255, 147, 41, 0.2)",

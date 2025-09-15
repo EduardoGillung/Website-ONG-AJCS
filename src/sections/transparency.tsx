@@ -17,7 +17,7 @@ const Transparency = () => {
           </div>
 
           {/* Título */}
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 font-livvic">
             Transparência
           </h2>
 

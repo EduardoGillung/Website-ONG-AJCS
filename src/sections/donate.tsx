@@ -22,12 +22,12 @@ const Donate = () => {
   ];
 
   return (
-    <div className="min-h-screen flex items-center justify-center py-12 bg-[#171E37]">
+    <div className="min-h-screen flex items-center justify-center py-8 bg-[#171E37]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-12">
           {/* Título da seção */}
           <div className="space-y-5">
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">
+            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white font-livvic">
               <span className="text-yellow-400">Faça a</span> Diferença
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-yellow-400 to-yellow-500 mx-auto rounded-full"></div>

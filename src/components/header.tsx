@@ -81,11 +81,11 @@ const Header = () => {
         <div className="hidden lg:block">
           <button
             onClick={() => scrollToSection('doar')}
-            className="relative overflow-hidden bg-gradient-to-r from-[#D21528] to-[#8D0916] hover:from-[#B81322] hover:to-[#7A0813] 
+            className="relative overflow-hidden bg-[#D21528] hover:from-[#B81322] hover:to-[#7A0813] 
             text-white font-bold px-10 py-4 rounded-3xl transition-all duration-300 shadow-lg 
             hover:shadow-xl hover:shadow-[#D21528]/40 transform hover:-translate-y-1 text-md border-1 solid #7A0813"
             style={{
-              boxShadow: '0 4px 15px rgba(210, 21, 40, 0.3), 0 0 20px rgba(210, 21, 40, 0.1)'
+              boxShadow: '0 4px 15px rgba(255, 0, 25, 0.3), 0 0 20px rgba(202, 0, 20, 0.1)'
             }}
           >
             <span className="relative z-10">Quero Doar</span>

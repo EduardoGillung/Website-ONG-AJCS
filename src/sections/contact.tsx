@@ -51,9 +51,12 @@ const Contact = () => {
         <div className="text-center space-y-10">
           {/* Título da seção */}
           <div className="space-y-5">
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight font-livvic">
-              <span className="text-yellow-400">Entre em</span> Contato
-            </h2>
+          <div className="mx-auto px-6 max-w-7xl flex justify-center">
+            <h1 className="bg-[#008C17] text-white text-3xl md:text-4xl font-bold px-16 py-6 rounded-lg shadow-md max-w-lg w-full text-center font-livvic" 
+              style={{ boxShadow: "0 4px 15px rgba(0, 140, 23, 0.3), 0 0 20px rgba(0, 140, 23, 0.1)" }}>
+              Contato
+            </h1>
+          </div>
             <div className="w-20 h-1 bg-gradient-to-r from-yellow-400 to-yellow-500 mx-auto rounded-full"></div>
             <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto">
               Estamos aqui para responder suas dúvidas e compartilhar nossa missão. Conecte-se conosco e faça parte da transformação!
