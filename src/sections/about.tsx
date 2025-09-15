@@ -6,10 +6,10 @@ import figuraSobrenos3 from "../assets/figura-sobrenos3.png";
 const About = () => {
   return (
     <>
-      <section className="bg-transparent mt-10 ">
+      <section className="bg-gradient-to-br from-[#000928] via-[#1a1f3a] to-[#000928] pt-24">
         <div className="mx-auto px-6 max-w-7xl flex justify-center lg:justify-start">
           <div
-            className="bg-[#D21528] text-white text-2xl md:text-3xl font-bold px-12 py-4 rounded-lg shadow-md max-w-md w-full text-center"
+            className="bg-[#D21528] text-white text-2xl md:text-3xl font-bold px-12 py-4 rounded-lg shadow-md max-w-md w-full text-center leading-tight font-livvic"
             style={{
               boxShadow: "0 4px 15px rgba(210, 21, 40, 0.3), 0 0 20px rgba(210, 21, 40, 0.1)",
             }}
@@ -21,6 +21,9 @@ const About = () => {
         <div className="container mx-auto px-6 max-w-7xl py-16">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-6 text-white">
+            <h1 className="text-2xl font-livvic font-bold leading-relaxed text-yellow-400">
+              Associação Juventudes Contruindo Sonhos
+              </h1>
               <p className="text-lg leading-relaxed">
                 Fundada em 16 de setembro de 2005 através do grupo de lideranças jovens remanescentes do projeto Fórum Engenho de Sonhos de Combate a Pobreza (2000-2005), que foi financiado pela Fundação W. K. Kellogg.
               </p>
@@ -44,10 +47,10 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+
 
       {/* ==== SEÇÃO MISSÃO, VISÃO E VALORES ==== */}
-      <section className="bg-transparent py-16">
+
         <div className="container mx-auto px-6 max-w-7xl">
 
           <div className="grid lg:grid-cols-3 gap-8">

@@ -19,7 +19,7 @@ const Partners = () => {
   ];
 
   return (
-    <section className="min-h-screen bg-transparent py-24">
+    <section className="min-h-screen bg-gradient-to-br from-[#000928] via-[#1a1f3a] to-[#000928] py-24">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Standardized Title Section */}
         <header className="bg-transparent mb-12">

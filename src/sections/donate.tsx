@@ -22,7 +22,7 @@ const Donate = () => {
   ];
 
   return (
-    <div className="min-h-screen flex items-center justify-center py-12">
+    <div className="min-h-screen flex items-center justify-center py-12 bg-gradient-to-br from-[#000928] via-[#1a1f3a] to-[#000928]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-12">
           {/* Título da seção */}

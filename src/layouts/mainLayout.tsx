@@ -8,7 +8,7 @@ interface MainLayoutProps {
 
 const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-[#000928] via-[#1a1f3a] to-[#000928]">
+    <div className="min-h-screen w-full bg-white">
       <Header />
       <main className="flex">
         {children}

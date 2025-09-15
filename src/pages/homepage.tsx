@@ -3,6 +3,7 @@ import Intro from "../sections/intro";
 import About from "../sections/about";
 import Contact from "../sections/contact";
 import Projects from "../sections/projects";
+import Fair from "../sections/fair";
 import Partners from "../sections/partners";
 import Transparency from "../sections/transparency";
 import Donate from "../sections/donate";
@@ -14,6 +15,7 @@ const Home = () => {
     { id: "intro", label: "Início" },
     { id: "sobre", label: "Quem Somos" },
     { id: "projetos", label: "Projetos" },
+    { id: "feira", label: "Feira" },
     { id: "colaboradores", label: "Colaboradores" },
     { id: "contato", label: "Contato" },
     { id: "transparencia", label: "Transparência" },
@@ -77,13 +79,18 @@ const Home = () => {
       </section>
 
       {/* Seção Sobre */}
-      <section id="sobre" className="min-h-screen scroll-mt-24">
+      <section id="sobre" className="min-h-screen scroll-mt-28">
         <About />
       </section>
 
       {/* Seção Projetos */}
       <section id="projetos" className="min-h-screen scroll-mt-24">
         <Projects />
+      </section>
+
+      {/* Seção Feira (fundo branco) */}
+      <section id="feira" className="min-h-screen scroll-mt-24 bg-white">
+        <Fair />
       </section>
 
       {/* Seção Colaboradores */}

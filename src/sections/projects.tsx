@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../components/shapeDivisor.css";
 import capoeiraImg from "../assets/Capoeira-AJCS3.png";
 import bibliotecaImg from "../assets/Biblioteca-AJCS5.png";
 import capoeiraImg2 from "../assets/Capoeira-AJCS6.png";
@@ -34,10 +35,10 @@ const Projects = () => {
     setCurrent((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
 
   return (
-    <section className="py-16">
+    <section className="pt-16 pb-[clamp(100px,12vw,220px)] relative overflow-hidden bg-gradient-to-br from-[#000928] via-[#1a1f3a] to-[#000928] pt-24">
       {/* Título */}
       <h2
-        className="mx-auto max-w-md text-center bg-[#C94300] text-white text-2xl md:text-3xl font-bold px-12 py-4 rounded-lg shadow-md mb-12"
+        className="mx-auto max-w-md text-center bg-[#C94300] text-white text-2xl md:text-3xl font-bold px-12 py-4 rounded-lg shadow-md mb-12 leading-tight font-livvic"
         style={{
           boxShadow:
             "0 4px 15px rgba(201, 67, 0, 0.4), 0 0 20px rgba(255, 147, 41, 0.2)",
@@ -51,9 +52,10 @@ const Projects = () => {
         {/* Botão anterior */}
         <button
           onClick={prevSlide}
-          className="absolute left-0 bg-white/10 hover:bg-white/20 p-3 rounded-full transition"
+          aria-label="Projeto anterior"
+          className="absolute top-1/2 -translate-y-1/2 -left-6 md:-left-14 lg:-left-20 z-20 h-12 w-12 flex items-center justify-center rounded-full bg-white/20 text-white shadow-lg ring-1 ring-white/30 backdrop-blur-sm transition-transform duration-200 hover:bg-white/30 hover:scale-105"
         >
-          ◀
+          <span aria-hidden>◀</span>
         </button>
 
         {/* Card */}
@@ -77,10 +79,26 @@ const Projects = () => {
         {/* Botão próximo */}
         <button
           onClick={nextSlide}
-          className="absolute right-0 bg-white/10 hover:bg-white/20 p-3 rounded-full transition"
+          aria-label="Próximo projeto"
+          className="absolute top-1/2 -translate-y-1/2 -right-6 md:-right-14 lg:-right-20 z-20 h-12 w-12 flex items-center justify-center rounded-full bg-white/20 text-white shadow-lg ring-1 ring-white/30 backdrop-blur-sm transition-transform duration-200 hover:bg-white/30 hover:scale-105"
         >
-          ▶
+          <span aria-hidden>▶</span>
         </button>
+      </div>
+
+      {/* Shape Divider */}
+      <div className="custom-shape-divider-top-1757944207">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            className="shape-fill"
+          ></path>
+        </svg>
       </div>
     </section>
   );
