@@ -1,4 +1,5 @@
 import LogoFeira from "../assets/logo-feira.png";
+import FeiraImage from "../assets/feira1.jpg";
 
 const Fair = () => {
   return (
@@ -31,6 +32,18 @@ const Fair = () => {
         <p className="text-#171E37 text-center text-base md:text-lg leading-relaxed">
           Criada pela Associação de Juventudes Construindo Sonhos (AJCS), a Feira é mais do que um evento é um movimento de valorização das identidades locais, geração de renda e fortalecimento das redes criativas que transformam o dia a dia dos bairros e territórios.
         </p>
+      </div>
+
+      {/* Imagem da Feira */}
+      <div className="mx-auto px-6 max-w-7xl mt-12 mb-8">
+        <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+          <img
+            src={FeiraImage}
+            alt="Feira Mãos de Potengi - Evento da comunidade"
+            className="w-full h-64 sm:h-80 md:h-96 lg:h-[28rem] xl:h-[32rem] object-cover transition-transform duration-500 hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+        </div>
       </div>
 
       {/* Cards das Principais Atrações */}

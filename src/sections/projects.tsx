@@ -37,40 +37,42 @@ const Projects = () => {
   return (
     <section className="pb-[clamp(200px,24vw,340px)] relative overflow-hidden bg-[#171E37] pt-28">
       {/* Título */}
-      <h2
-        className="mx-auto max-w-lg text-center bg-[#C94300] text-white text-3xl md:text-4xl font-bold px-16 py-6 rounded-lg shadow-md mb-12 leading-tight font-livvic"
-        style={{
-          boxShadow:
-            "0 4px 15px rgba(201, 67, 0, 0.4), 0 0 20px rgba(255, 147, 41, 0.2)",
-        }}
-      >
-        Projetos Sociais
-      </h2>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2
+          className="mx-auto max-w-lg text-center bg-[#C94300] text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold px-4 sm:px-6 md:px-8 lg:px-12 py-4 sm:py-5 md:py-6 rounded-lg shadow-md mb-8 sm:mb-10 md:mb-12 leading-tight font-livvic"
+          style={{
+            boxShadow:
+              "0 4px 15px rgba(201, 67, 0, 0.4), 0 0 20px rgba(255, 147, 41, 0.2)",
+          }}
+        >
+          Projetos Sociais
+        </h2>
+      </div>
 
       {/* Conteúdo */}
-      <div className="relative max-w-5xl mx-auto flex items-center justify-center py-16">
+      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center py-8 sm:py-12 md:py-16">
         {/* Botão anterior */}
         <button
           onClick={prevSlide}
           aria-label="Projeto anterior"
-          className="absolute top-1/2 -translate-y-1/2 -left-6 md:-left-14 lg:-left-20 z-20 h-12 w-12 flex items-center justify-center rounded-full bg-white/20 text-white shadow-lg ring-1 ring-white/30 backdrop-blur-sm transition-transform duration-200 hover:bg-white/30 hover:scale-105"
+          className="absolute top-1/2 -translate-y-1/2 left-2 sm:left-4 md:-left-6 lg:-left-14 xl:-left-20 z-20 h-10 w-10 sm:h-12 sm:w-12 flex items-center justify-center rounded-full bg-white/20 text-white shadow-lg ring-1 ring-white/30 backdrop-blur-sm transition-transform duration-200 hover:bg-white/30 hover:scale-105"
         >
           <span aria-hidden>◀</span>
         </button>
 
         {/* Card */}
-        <div className="flex flex-col md:flex-row items-center gap-8 text-center md:text-left">
+        <div className="flex flex-col md:flex-row items-center gap-6 sm:gap-8 text-center md:text-left w-full">
           {/* Imagem */}
           <img
             src={projects[current].image}
             alt={projects[current].title}
-            className="w-full md:w-1/2 h-64 md:h-80 object-cover rounded-xl shadow-lg"
+            className="w-full md:w-1/2 h-48 sm:h-56 md:h-64 lg:h-80 object-cover rounded-xl shadow-lg"
           />
 
           {/* Texto */}
-          <div className="w-full md:w-1/2 text-white space-y-4 border-l-4 border-yellow-400 pl-6">
-            <h3 className="text-xl font-bold">{projects[current].title}</h3>
-            <p className="text-sm leading-relaxed opacity-90">
+          <div className="w-full md:w-1/2 text-white space-y-3 sm:space-y-4 border-l-4 border-yellow-400 pl-4 sm:pl-6">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-bold">{projects[current].title}</h3>
+            <p className="text-xs sm:text-sm md:text-base leading-relaxed opacity-90">
               {projects[current].description}
             </p>
           </div>
@@ -80,7 +82,7 @@ const Projects = () => {
         <button
           onClick={nextSlide}
           aria-label="Próximo projeto"
-          className="absolute top-1/2 -translate-y-1/2 -right-6 md:-right-14 lg:-right-20 z-20 h-12 w-12 flex items-center justify-center rounded-full bg-white/20 text-white shadow-lg ring-1 ring-white/30 backdrop-blur-sm transition-transform duration-200 hover:bg-white/30 hover:scale-105"
+          className="absolute top-1/2 -translate-y-1/2 right-2 sm:right-4 md:-right-6 lg:-right-14 xl:-right-20 z-20 h-10 w-10 sm:h-12 sm:w-12 flex items-center justify-center rounded-full bg-white/20 text-white shadow-lg ring-1 ring-white/30 backdrop-blur-sm transition-transform duration-200 hover:bg-white/30 hover:scale-105"
         >
           <span aria-hidden>▶</span>
         </button>
