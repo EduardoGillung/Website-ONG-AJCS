@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../components/shapeDivisor.css";
 import capoeiraImg from "../assets/Capoeira-AJCS3.png";
 import bibliotecaImg from "../assets/Biblioteca-AJCS5.png";
-import futebol from "../assets/futebol.jpg"
+import futebol from "../assets/futebol.png"
 
 const projects = [
   {
