@@ -1,4 +1,6 @@
 
+import TransparencyImage from "../assets/transparency.png";
+
 const Transparency = () => {
   const handleTransparencyClick = () => {
     // Link para o drive de transparência
@@ -9,11 +11,13 @@ const Transparency = () => {
     <section className="bg-[#171E37] min-h-screen flex items-center justify-center pt-24 pb-24">
       <div className="container mx-auto px-6 max-w-6xl text-center">
         <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-9 border border-white/10 shadow-2xl">
-          {/* Ícone de Transparência */}
-          <div className="w-24 h-24 mx-auto mb-8 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center shadow-lg">
-            <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
+          {/* Imagem de Transparência */}
+          <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 mx-auto mb-8 sm:mb-10 md:mb-12">
+            <img
+              src={TransparencyImage}
+              alt="Transparência"
+              className="w-full h-full object-cover"
+            />
           </div>
 
           {/* Título */}
