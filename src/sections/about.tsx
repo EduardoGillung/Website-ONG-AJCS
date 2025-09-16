@@ -1,4 +1,5 @@
 import capoeiraImg2 from "../assets/Capoeira-AJCS6.png";
+import premioItau from "../assets/premio-itau.png";
 import figuraSobrenos from "../assets/figura-sobrenos.png";
 import figuraSobrenos2 from "../assets/figura-sobrenos2.png";
 import figuraSobrenos3 from "../assets/figura-sobrenos3.png";
@@ -7,22 +8,19 @@ const About = () => {
   return (
     <>
       <section className="bg-[#171E37] pt-24">
-        <div className="mx-auto px-6 max-w-7xl flex justify-center lg:justify-start">
-          <div
-            className="bg-[#D21528] text-white text-3xl md:text-4xl font-bold px-16 py-6 rounded-lg shadow-md max-w-lg w-full text-center leading-tight font-livvic"
-            style={{
-              boxShadow: "0 4px 15px rgba(210, 21, 40, 0.3), 0 0 20px rgba(210, 21, 40, 0.1)",
-            }}
-          >
-            Quem somos
-          </div>
-        </div>
-
         <div className="container mx-auto px-6 max-w-7xl py-16">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-6 text-white">
-            <h1 className="text-2xl font-livvic font-bold leading-relaxed text-yellow-400">
-              Associação Juventudes Contruindo Sonhos
+              <div
+                className="bg-[#D21528] text-white text-3xl md:text-4xl font-bold px-16 py-6 rounded-lg shadow-md max-w-lg w-full text-center leading-tight font-livvic"
+                style={{
+                  boxShadow: "0 4px 15px rgba(210, 21, 40, 0.3), 0 0 20px rgba(210, 21, 40, 0.1)",
+                }}
+              >
+                Quem somos
+              </div>
+              <h1 className="text-2xl font-livvic font-bold leading-relaxed text-yellow-400">
+                Associação Juventudes Contruindo Sonhos
               </h1>
               <p className="text-lg leading-relaxed">
                 Fundada em 16 de setembro de 2005 através do grupo de lideranças jovens remanescentes do projeto Fórum Engenho de Sonhos de Combate a Pobreza (2000-2005), que foi financiado pela Fundação W. K. Kellogg.
@@ -38,23 +36,32 @@ const About = () => {
               </p>
             </div>
 
-            <div className="flex justify-center lg:justify-start lg:ml-4 items-start">
+            <div className="flex flex-col justify-start lg:ml-4 items-start gap-6">
               <img
                 src={capoeiraImg2}
                 alt="Atividade da AJCS"
                 className="w-full max-w-lg h-72 md:h-96 object-cover rounded-xl shadow-lg"
               />
+              <div className="flex flex-col bg-[#1F2947] rounded-xl shadow-lg p-6 items-center gap-4 max-w-lg w-full">
+                <img
+                  src={premioItau}
+                  alt="Prêmio Itaú"
+                  className="w-32 h-32 object-contain rounded-lg"
+                />
+                <div className="text-white text-center">
+                  <h3 className="text-xl font-bold mb-2 text-yellow-400">Reconhecimento</h3>
+                  <p className="text-gray-200 leading-relaxed">
+                    A AJCS foi reconhecida pelo Prêmio Itaú-Unicef por suas ações de inclusão social e fortalecimento da cultura juvenil, destacando-se como referência em projetos sociais na região.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-
-      {/* ==== SEÇÃO MISSÃO, VISÃO E VALORES ==== */}
-
+        {/* ==== SEÇÃO MISSÃO, VISÃO E VALORES ==== */}
         <div className="container mx-auto px-6 max-w-7xl py-24">
-
           <div className="grid lg:grid-cols-3 gap-8">
-            {/* Missão com figura-sobrenos */}
             <div className="text-center">
               <h3 className="text-3xl font-bold text-yellow-400 mb-10">Missão</h3>
               <div className="w-full h-40 mx-auto mb-6 flex items-center justify-center">
@@ -65,9 +72,8 @@ const About = () => {
               </p>
             </div>
 
-            {/* Visão com figura-sobrenos2 */}
             <div className="text-center">
-            <h3 className="text-3xl font-bold text-yellow-400 mb-10">Visão</h3>
+              <h3 className="text-3xl font-bold text-yellow-400 mb-10">Visão</h3>
               <div className="w-full h-40 mx-auto mb-6 flex items-center justify-center">
                 <img src={figuraSobrenos2} alt="Visão" className="w-full h-full object-contain" />
               </div>
@@ -76,7 +82,6 @@ const About = () => {
               </p>
             </div>
 
-            {/* Valores com figura-sobrenos3 */}
             <div className="text-center">
               <h3 className="text-3xl font-bold text-yellow-400 mb-10">Valores</h3>
               <div className="w-full h-40 mx-auto mb-6 flex items-center justify-center">
@@ -89,8 +94,6 @@ const About = () => {
           </div>
         </div>
       </section>
-
-      
     </>
   );
 };

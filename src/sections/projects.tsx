@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../components/shapeDivisor.css";
 import capoeiraImg from "../assets/Capoeira-AJCS3.png";
 import bibliotecaImg from "../assets/Biblioteca-AJCS5.png";
-import capoeiraImg2 from "../assets/Capoeira-AJCS6.png";
+import futebol from "../assets/futebol.jpg"
 
 const projects = [
   {
@@ -18,10 +18,10 @@ const projects = [
     image: bibliotecaImg,
   },
   {
-    title: "Esporte",
+    title: "Futebol",
     description:
       "Promoção de atividades esportivas para jovens, incentivando a disciplina, o trabalho em equipe e a saúde física e mental.",
-    image: capoeiraImg2,
+    image: futebol,
   },
 ];
 
@@ -47,6 +47,9 @@ const Projects = () => {
         >
           Projetos Sociais
         </h2>
+        <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed text-center">
+        A organização desenvolve projetos de capoeira, futebol e dança com cerca de mais de 200 crianças e adolescentes em comunidades periféricas de Natal, visando combater o trabalho infantil e a evasão escolar.
+          </p>
       </div>
 
       {/* Conteúdo */}
