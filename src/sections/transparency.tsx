@@ -8,9 +8,11 @@ const Transparency = () => {
   };
 
   return (
-    <section className="bg-[#171E37] min-h-screen flex items-center justify-center pt-24 pb-24">
+    <section className="bg-transparent 
+    min-h-screen flex items-start justify-center pt-24 pb-24 relative">
+  
       <div className="container mx-auto px-6 max-w-6xl text-center">
-        <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-9 border border-white/10 shadow-2xl">
+        <div className="bg-[#171E37] backdrop-blur-sm rounded-3xl p-9 border border-white/10 shadow-2xl">
           {/* Imagem de Transparência */}
           <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 mx-auto mb-8 sm:mb-10 md:mb-12">
             <img

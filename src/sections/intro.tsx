@@ -23,7 +23,7 @@ const Intro = () => {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center w-full">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-yellow-400 drop-shadow-lg leading-tight font-livvic">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl font-black text-yellow-400 drop-shadow-lg leading-tight font-livvic">
             <span className="block">Juventudes</span>
             <span className="block">Construindo</span>
             <span className="block">Sonhos</span>
