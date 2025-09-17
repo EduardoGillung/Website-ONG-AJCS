@@ -82,8 +82,8 @@ const Header = () => {
           <button
             onClick={() => scrollToSection('doar')}
             className="relative overflow-hidden bg-[#D21528] hover:from-[#B81322] hover:to-[#7A0813] 
-            text-white font-bold px-10 py-4 rounded-3xl transition-all duration-300 shadow-lg 
-            hover:shadow-xl hover:shadow-[#D21528]/40 transform hover:-translate-y-1 text-md border-1 solid #7A0813"
+            text-white font-bold px-10 py-4 rounded-xl transition-all duration-300 shadow-lg 
+            hover:shadow-xl hover:shadow-[#D21528]/40 transform hover:-translate-y-1 text-md border-1 border-[#B81322]"
             style={{
               boxShadow: '0 4px 15px rgba(255, 0, 25, 0.3), 0 0 20px rgba(202, 0, 20, 0.1)'
             }}

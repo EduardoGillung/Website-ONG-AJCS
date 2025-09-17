@@ -47,7 +47,9 @@ const Intro = () => {
             </button>
             <button
               onClick={() => document.getElementById('doar')?.scrollIntoView({ behavior: 'smooth' })}
-              className="w-full sm:w-auto border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black font-bold px-4 sm:px-6 md:px-8 py-3 sm:py-4 rounded-xl transition-all duration-300 transform hover:-translate-y-1 text-sm sm:text-base"
+              className="w-full sm:w-auto border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black
+                font-bold px-4 sm:px-6 md:px-8 py-3 sm:py-4 rounded-xl transition-all duration-300 
+                transform hover:-translate-y-1 text-sm sm:text-base"
               style={{ boxShadow: "0 4px 15px rgba(255, 193, 7, 0.15), 0 0 20px rgba(255, 215, 0, 0.25)" }}
               aria-label="Faça uma doação"
             >

@@ -72,6 +72,31 @@ const Partners = () => {
               </div>
             </div>
           </div>
+          <div className="max-w-3xl mx-auto text-center mt-8">
+        <h2 className="text-3xl font-bold text-[#171E37] mb-4">
+          Junte-se a Nós
+        </h2>
+        <p className="text-lg text-gray-600 leading-relaxed">
+          Seja parte da transformação! Contribua com seu talento, tempo ou recursos
+          e ajude a construir um futuro mais justo e solidário.  
+          <br />
+          <span className="font-semibold text-gray-800">
+            Sua colaboração faz a diferença!
+          </span>
+        </p>
+      </div>
+      <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">    
+        <button
+          onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
+          className="w-full sm:w-auto bg-yellow-300 hover:bg-yellow-500 border border-[#171E37] text-black font-bold px-4 sm:px-6 md:px-8 py-3 sm:py-4
+          rounded-xl transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl text-sm sm:text-base"
+          style={{ boxShadow: "0 4px 15px rgba(255, 193, 7, 0.15), 0 0 20px rgba(255, 215, 0, 0.25)" }}
+          aria-label="Conheça nossa história"
+        >
+    Entrar em Contato
+  </button>
+</div>
+
         </div>
         
       </section>
