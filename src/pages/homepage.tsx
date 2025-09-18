@@ -7,7 +7,6 @@ import Fair from "../sections/fair";
 import Partners from "../sections/partners";
 import Transparency from "../sections/transparency";
 import Donate from "../sections/donate";
-import { Particles } from "../components/ui/particles";
 const Home = () => {
 
   useEffect(() => {
