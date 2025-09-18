@@ -1,4 +1,5 @@
 import { Particles } from "../components/ui/particles";
+import DonateImage from "../assets/donate.png"
 
 const Donate = () => {
   const donationMethods = [
@@ -29,6 +30,14 @@ const Donate = () => {
       />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center space-y-12">
+          {/* Imagem de Transparência */}
+          <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 mx-auto mb-8 sm:mb-10 md:mb-12 mt-24">
+            <img
+              src={DonateImage}
+              alt="Doacao"
+              className="w-full h-full object-contain"
+            />
+          </div>
           {/* Título da seção */}
           <div className="space-y-6">
             <div className="text-white text-3xl md:text-4xl font-bold text-center font-livvic">
