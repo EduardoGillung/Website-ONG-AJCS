@@ -43,7 +43,9 @@ const Transparency = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 font-livvic">
             Transparência
           </h2>
-
+          <div className="mt-4 mb-8 w-1/2 h-2 bg-[#00B91F] rounded-full mx-auto"
+                 style={{ boxShadow: "0 8px 15px rgba(144, 238, 144, 0.3), 0 0 10px rgba(144, 238, 144, 0.1)" }}>
+                </div>
           {/* Descrição */}
           <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
             Acreditamos na importância da transparência em todas as nossas ações. 

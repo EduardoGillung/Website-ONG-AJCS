@@ -27,18 +27,13 @@ const Contact = () => {
       <div className="text-center space-y-10">
         {/* Título da seção */}
         <div className="space-y-5">
-          <div className="mx-auto px-6 max-w-7xl flex justify-center">
-            <h1
-              className="bg-[#008C17] text-white text-3xl md:text-4xl font-bold px-16 py-6 rounded-lg shadow-md max-w-lg w-full text-center font-livvic"
-              style={{
-                boxShadow:
-                  "0 4px 15px rgba(0, 140, 23, 0.3), 0 0 20px rgba(0, 140, 23, 0.1)",
-              }}
-            >
-              Contato
-            </h1>
-          </div>
-          <div className="w-20 h-1 bg-gradient-to-r from-yellow-400 to-yellow-500 mx-auto rounded-full"></div>
+        <div className="text-white text-3xl md:text-4xl font-bold text-center font-livvic ">
+              Entre em contato
+                <div className="mt-4 w-1/2 h-2 bg-[#D21528] rounded-full mx-auto"
+                 style={{boxShadow: "0 8px 15px rgba(210, 21, 40, 0.3), 0 0 10px rgba(210, 21, 40, 0.1)"}}>
+                </div>
+              </div>
+
           <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto">
             Estamos aqui para responder suas dúvidas e compartilhar nossa missão. Conecte-se conosco e faça parte da transformação!
           </p>

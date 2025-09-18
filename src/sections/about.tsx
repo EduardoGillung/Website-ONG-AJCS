@@ -11,9 +11,7 @@ const About = () => {
         <div className="container mx-auto px-6 max-w-7xl py-16">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-6 text-white">
-              <div
-                className="text-white text-3xl md:text-4xl font-bold py-6 rounded-lg shadow-md max-w-3xl text-center leading-tight font-livvic"
-              >
+            <div className="text-white text-3xl md:text-4xl font-bold text-center font-livvic ">
                 Quem somos
                 <div className="mt-4 w-4/4 h-2 bg-[#D21528] rounded-full"
                  style={{boxShadow: "0 8px 15px rgba(210, 21, 40, 0.3), 0 0 10px rgba(210, 21, 40, 0.1)"}}>
