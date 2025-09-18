@@ -1,3 +1,5 @@
+import { Particles } from "../components/ui/particles";
+
 const Donate = () => {
   const donationMethods = [
     {
@@ -14,41 +16,32 @@ const Donate = () => {
     },
   ];
 
-  const impactStats = [
-    { number: "500+", label: "Crianças Atendidas", icon: "👶" },
-    { number: "50+", label: "Projetos Ativos", icon: "🎯" },
-    { number: "1000+", label: "Famílias Beneficiadas", icon: "🏠" },
-    { number: "15+", label: "Anos de Atuação", icon: "⭐" },
-  ];
+
 
   return (
-    <div className="min-h-screen flex items-center justify-center py-8 bg-[#171E37]">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen flex items-center justify-center py-8 bg-[#171E37] relative">
+      <Particles 
+        className="absolute inset-0 z-0" 
+        quantity={115}
+        ease={70}
+        color="#D21528"
+        size={1.2}
+      />
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center space-y-12">
           {/* Título da seção */}
-          <div className="space-y-5">
-            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white font-livvic">
+          <div className="space-y-6">
+            <div className="text-white text-3xl md:text-4xl font-bold text-center font-livvic">
               <span className="text-yellow-400">Faça a</span> Diferença
-            </h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-yellow-400 to-yellow-500 mx-auto rounded-full"></div>
-            <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto">
+              <div className="mt-4 w-1/2 h-2 bg-yellow-400 rounded-full mx-auto"
+                   style={{ boxShadow: "0 8px 15px rgba(255, 255, 0, 0.3), 0 0 10px rgba(255, 255, 0, 0.1)" }}>
+              </div>
+            </div>
+            <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto text-center">
               Sua doação transforma vidas e ajuda a construir um futuro melhor. Entre em contato para saber como contribuir!
             </p>
           </div>
 
-          {/* Estatísticas de Impacto */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
-            {impactStats.map((stat, index) => (
-              <div
-                key={index}
-                className="p-4"
-              >
-                <div className="text-3xl sm:text-4xl mb-2">{stat.icon}</div>
-                <div className="text-2xl sm:text-3xl font-bold text-yellow-400 mb-1">{stat.number}</div>
-                <div className="text-white/90 text-sm sm:text-base">{stat.label}</div>
-              </div>
-            ))}
-          </div>
 
           {/* Como Doar */}
           <div className="space-y-6">

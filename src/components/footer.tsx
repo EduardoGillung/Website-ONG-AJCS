@@ -21,7 +21,7 @@ const Footer = () => {
           {/* Logo e Descrição */}
           <div className="text-center lg:text-left space-y-6">
             <Link to="/" className="inline-flex items-center space-x-3 group">
-              <div className="w-12 h-12 rounded-xl border-2 border-yellow-400 bg-white flex items-center justify-center shadow-lg group-hover:shadow-yellow-400/25 transition-all duration-300 overflow-hidden">
+              <div className="w-12 h-12 rounded-3xl border-2 border-yellow-400 bg-white flex items-center justify-center shadow-lg group-hover:shadow-yellow-400/25 transition-all duration-300 overflow-hidden">
                 <img 
                   src={Logo} 
                   alt="Associação Juventude Construindo Sonhos Logo" 
@@ -29,11 +29,12 @@ const Footer = () => {
                 />
               </div>
               <div className="flex flex-col">
-                <span className="text-white text-lg font-bold">Construindo</span>
+                <span className="text-yellow-400 text-lg font-bold">Juventudes</span>
+                <span className="text-yellow-400 text-lg font-bold">Construindo</span>
                 <span className="text-yellow-400 text-lg font-bold">Sonhos</span>
               </div>
             </Link>
-            <p className="text-yellow-400/80 text-lg leading-relaxed max-w-md mx-auto lg:mx-0">
+            <p className="text-gray-100 text-lg leading-relaxed max-w-md mx-auto lg:mx-0">
               Transformando vidas através de projetos sociais e solidariedade.
             </p>
             <div className="flex justify-center lg:justify-start space-x-4">
@@ -80,17 +81,7 @@ const Footer = () => {
                 </div>
               ))}
             </div>
-            <div className="pt-4">
-              <Link
-                to="/donate"
-                className="inline-block bg-[#FFE100] hover:bg-[#FFD700] text-[#4A430B] font-bold px-8 py-3 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#FFE100]/40 transform hover:-translate-y-1"
-                style={{
-                  boxShadow: '0 4px 15px rgba(255, 225, 0, 0.3), 0 0 20px rgba(255, 225, 0, 0.1)'
-                }}
-              >
-                Quero Doar
-              </Link>
-            </div>
+
           </div>
         </div>
 

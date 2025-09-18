@@ -3,12 +3,20 @@ import premioItau from "../assets/premio-itau.png";
 import figuraSobrenos from "../assets/figura-sobrenos.png";
 import figuraSobrenos2 from "../assets/figura-sobrenos2.png";
 import figuraSobrenos3 from "../assets/figura-sobrenos3.png";
+import { Particles } from "../components/ui/particles";
 
 const About = () => {
   return (
     <>
-      <section className="bg-[#171E37] pt-12">
-        <div className="container mx-auto px-6 max-w-7xl py-16">
+      <section className="bg-[#171E37] pt-12 relative">
+        <Particles 
+          className="absolute inset-0 z-0" 
+          quantity={120}
+          ease={60}
+          color="#D21528"
+          size={1.2}
+        />
+        <div className="container mx-auto px-6 max-w-7xl py-16 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-6 text-white">
             <div className="text-white text-3xl md:text-4xl font-bold text-center font-livvic ">
@@ -58,7 +66,7 @@ const About = () => {
         </div>
 
         {/* ==== SEÇÃO MISSÃO, VISÃO E VALORES ==== */}
-        <div className="container mx-auto px-6 max-w-7xl py-24">
+        <div className="container mx-auto px-6 max-w-7xl py-24 relative z-10">
           <div className="grid lg:grid-cols-3 gap-8">
             <div className="text-center">
               <h3 className="text-3xl font-bold text-yellow-400 mb-10">Missão</h3>

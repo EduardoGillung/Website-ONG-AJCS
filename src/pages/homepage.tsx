@@ -7,6 +7,7 @@ import Fair from "../sections/fair";
 import Partners from "../sections/partners";
 import Transparency from "../sections/transparency";
 import Donate from "../sections/donate";
+import { Particles } from "../components/ui/particles";
 const Home = () => {
 
   useEffect(() => {
@@ -42,7 +43,7 @@ const Home = () => {
       </section>
 
       {/* Seção Transparência */}
-        <section id="transparencia" className="min-h-screen scroll-mt-24">
+      <section id="transparencia" className="min-h-screen scroll-mt-24">
         <Transparency />
       </section>
 

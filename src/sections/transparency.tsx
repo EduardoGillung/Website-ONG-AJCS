@@ -1,5 +1,6 @@
 
 import TransparencyImage from "../assets/transparency.png";
+import { Particles } from "../components/ui/particles";
 
 const Transparency = () => {
   const handleTransparencyClick = () => {
@@ -10,6 +11,13 @@ const Transparency = () => {
   return (
     <section className="bg-[#171E37] 
     min-h-screen flex items-start justify-center pt-24 pb-24 relative">
+      <Particles 
+        className="absolute inset-0 z-0" 
+        quantity={110}
+        ease={70}
+        color="#00B91F"
+        size={1.3}
+      />
 
       {/* Shape Divider */}
       <div className="custom-shape-divider-top-1758130511 absolute top-0 left-0 w-full overflow-hidden leading-none">
@@ -28,7 +36,7 @@ const Transparency = () => {
         </svg>
       </div>
 
-      <div className="container mx-auto px-6 max-w-6xl text-center">
+      <div className="container mx-auto px-6 max-w-6xl text-center relative z-10">
         <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-16 border border-white/10 shadow-2xl">
           {/* Imagem de Transparência */}
           <div className="w-44 h-44 sm:w-52 sm:h-52 md:w-60 md:h-60 lg:w-68 lg:h-68 mx-auto mb-8 sm:mb-10 md:mb-12">

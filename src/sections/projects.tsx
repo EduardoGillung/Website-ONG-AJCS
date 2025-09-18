@@ -2,7 +2,8 @@ import { useState } from "react";
 import "../components/shapeDivisor.css";
 import capoeiraImg from "../assets/Capoeira-AJCS3.png";
 import bibliotecaImg from "../assets/Biblioteca-AJCS5.png";
-import futebol from "../assets/futebol.png"
+import futebol from "../assets/futebol.png";
+import { Particles } from "../components/ui/particles";
 
 const projects = [
   {
@@ -36,8 +37,15 @@ const Projects = () => {
 
   return (
     <section className="pb-[clamp(200px,24vw,340px)] relative overflow-hidden bg-[#171E37] pt-28">
+      <Particles 
+        className="absolute inset-0 z-0" 
+        quantity={130}
+        ease={65}
+        color="#00B91F"
+        size={1.4}
+      />
       {/* Título */}
-        <div className="space-y-6">
+        <div className="space-y-6 relative z-10">
             <div className="text-white text-3xl md:text-4xl font-bold text-center font-livvic ">
               Projetos Sociais
                 <div className="mt-4 w-1/2 h-2 bg-[#FF5500] rounded-full mx-auto"

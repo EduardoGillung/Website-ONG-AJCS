@@ -1,4 +1,5 @@
 import { Instagram, Facebook, Mail } from 'lucide-react';
+import { Particles } from "../components/ui/particles";
 
 const Contact = () => {
   const socialLinks = [
@@ -23,8 +24,15 @@ const Contact = () => {
   ];
 
   return (
-    <div className="bg-[#171E37] min-h-screen flex items-center justify-center pt-24">
-      <div className="text-center space-y-10">
+    <div className="bg-[#171E37] min-h-screen flex items-center justify-center pt-24 relative">
+      <Particles 
+        className="absolute inset-0 z-0" 
+        quantity={125}
+        ease={65}
+        color="#D21528"
+        size={1.1}
+      />
+      <div className="text-center space-y-10 relative z-10">
         {/* Título da seção */}
         <div className="space-y-5">
         <div className="text-white text-3xl md:text-4xl font-bold text-center font-livvic ">
