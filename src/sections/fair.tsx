@@ -10,33 +10,27 @@ import FeiraArtesanato from "../assets/feira-artesanato.jpg";
 const Fair = () => {
   return (
     <section className="bg-white">
-      <div className="mx-auto px-6 max-w-7xl flex items-center justify-start gap-6 sm:gap-8 md:gap-10">
-        {/* Logo à esquerda, fora do componente vermelho */}
+      <div className="mx-auto px-6 max-w-7xl flex items-center justify-center gap-6 sm:gap-8 md:gap-10">
         <img
           src={LogoFeira}
           alt="logo-feira"
           className="h-36 w-36 sm:h-44 sm:w-44 md:h-48 md:w-48 object-contain"
         />
 
-        {/* Componente vermelho com o título centralizado */}
-        <div className="flex justify-start">
-          <div
-            className="bg-[#D21528] text-white rounded-lg shadow-md px-8 sm:px-10 md:px-12 py-6"
-            style={{
-              boxShadow:
-                "0 4px 15px rgba(210, 21, 40, 0.3), 0 0 20px rgba(210, 21, 40, 0.1)",
-            }}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold leading-tight font-livvic text-center ">
+        <div className="flex">
+        <div className="text-[#222D54] text-3xl md:text-4xl font-bold text-center font-livvic ">
               Feira Mãos de Potengi
-            </h2>
-          </div>
+                <div className="mt-4 w-full h-2 bg-[#D21528] rounded-full"
+                 style={{boxShadow: "0 8px 15px rgba(210, 21, 40, 0.3), 0 0 10px rgba(210, 21, 40, 0.1)"}}>
+                </div>
+              </div>
+
         </div>
       </div>
 
       {/* Descrição da Feira */}
-      <div className="mx-auto px-6 max-w-7xl mt-16">
-        <p className="text-gray-600 font-medium text-start text-base md:text-lg leading-relaxed">
+      <div className="mx-auto px-6 max-w-5xl mt-16">
+        <p className="text-gray-600 font-medium text-center text-base md:text-lg leading-relaxed">
           Criada pela Associação de Juventudes Construindo Sonhos (AJCS), a Feira
           é mais do que um evento é um movimento de valorização das identidades
           locais, geração de renda e fortalecimento das redes criativas que

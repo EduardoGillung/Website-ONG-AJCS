@@ -23,14 +23,12 @@ const Partners = () => {
 
         {/* Colored title */}
         <header className="bg-transparent mb-10">
-          <div className="mx-auto px-6 max-w-7xl flex justify-center">
-            <h1
-              className="bg-[#009DFF] text-white text-3xl md:text-4xl font-bold px-16 py-6 rounded-lg shadow-md max-w-lg w-full text-center font-livvic"
-              style={{ boxShadow: "0 4px 15px rgba(34, 167, 240, 0.3), 0 0 20px rgba(34, 167, 240, 0.1)" }}
-            >
+          <div className="text-[#222D54] text-3xl md:text-4xl font-bold text-center font-livvic ">
               Colaboradores
-            </h1>
-          </div>
+                <div className="mt-4 w-1/2 h-2 bg-[#009DFF] rounded-full mx-auto"
+                 style={{ boxShadow: "0 8px 15px rgba(0, 128, 255, 0.3), 0 0 10px rgba(0, 128, 255, 0.1)" }}>
+                </div>
+              </div>
 
         </header>
 
@@ -40,7 +38,7 @@ const Partners = () => {
               {/* Título APOIO */}
               <div className="flex items-center justify-center gap-4">
               <span className="hidden sm:block h-px flex-1 bg-gray-300"></span>
-              <h2 className="text-[#171E37] text-2xl sm:text-3xl font-extrabold text-center">APOIO</h2>
+              <h2 className="text-[#222D54] text-2xl sm:text-3xl font-bold text-center font-livvic">APOIO</h2>
               <span className="hidden sm:block h-px flex-1 bg-gray-300"></span>
               </div>
 
@@ -55,7 +53,7 @@ const Partners = () => {
               {/* Separador */}
               <div className="mt-12 flex items-center justify-center gap-4">
               <span className="hidden sm:block h-px flex-1 bg-gray-300"></span>
-              <h2 className="text-[#171E37] text-2xl sm:text-3xl font-extrabold text-center">PARCERIAS</h2>
+              <h2 className="text-[#222D54] text-2xl sm:text-3xl font-extrabold text-center ">PARCERIAS</h2>
               <span className="hidden sm:block h-px flex-1 bg-gray-300"></span>
               </div>
 
@@ -88,15 +86,14 @@ const Partners = () => {
       <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">    
         <button
           onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
-          className="w-full sm:w-auto bg-yellow-300 hover:bg-yellow-500 border border-[#171E37] text-black font-bold px-4 sm:px-6 md:px-8 py-3 sm:py-4
+          className="w-full sm:w-auto bg-yellow-100 hover:bg-yellow-500 border border-[#171E37] text-black font-bold px-4 sm:px-6 md:px-8 py-3 sm:py-4
           rounded-xl transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl text-sm sm:text-base"
-          style={{ boxShadow: "0 4px 15px rgba(255, 193, 7, 0.15), 0 0 20px rgba(255, 215, 0, 0.25)" }}
+          style={{ boxShadow: "0 4px 15px rgba(255, 193, 7, 0.15), 0 0 20px rgba(255, 215, 0, 0.25)"}}
           aria-label="Conheça nossa história"
         >
-    Entrar em Contato
-  </button>
-</div>
-
+          Entrar em Contato
+        </button>
+      </div>
         </div>
         
       </section>

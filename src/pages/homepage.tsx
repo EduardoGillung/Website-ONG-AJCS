@@ -7,17 +7,14 @@ import Fair from "../sections/fair";
 import Partners from "../sections/partners";
 import Transparency from "../sections/transparency";
 import Donate from "../sections/donate";
-
 const Home = () => {
-  // Navegação lateral removida
 
   useEffect(() => {
-    // Mantém apenas utilidades futuras; remove o scroll spy
+
   }, []);
 
   return (
     <div className="w-full relative">
-      {/* Navegação por bolinhas removida */}
 
       {/* Seção Intro */}
       <section id="intro" className="min-h-screen">

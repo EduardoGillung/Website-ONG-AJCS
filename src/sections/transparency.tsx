@@ -29,9 +29,9 @@ const Transparency = () => {
       </div>
 
       <div className="container mx-auto px-6 max-w-6xl text-center">
-        <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-9 border border-white/10 shadow-2xl">
+        <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-16 border border-white/10 shadow-2xl">
           {/* Imagem de Transparência */}
-          <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 mx-auto mb-8 sm:mb-10 md:mb-12">
+          <div className="w-44 h-44 sm:w-52 sm:h-52 md:w-60 md:h-60 lg:w-68 lg:h-68 mx-auto mb-8 sm:mb-10 md:mb-12">
             <img
               src={TransparencyImage}
               alt="Transparência"

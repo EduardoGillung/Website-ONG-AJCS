@@ -7,17 +7,17 @@ import figuraSobrenos3 from "../assets/figura-sobrenos3.png";
 const About = () => {
   return (
     <>
-      <section className="bg-[#171E37] pt-24">
+      <section className="bg-[#171E37] pt-12">
         <div className="container mx-auto px-6 max-w-7xl py-16">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-6 text-white">
               <div
-                className="bg-[#D21528] text-white text-3xl md:text-4xl font-bold px-16 py-6 rounded-lg shadow-md max-w-lg w-full text-center leading-tight font-livvic"
-                style={{
-                  boxShadow: "0 4px 15px rgba(210, 21, 40, 0.3), 0 0 20px rgba(210, 21, 40, 0.1)",
-                }}
+                className="text-white text-3xl md:text-4xl font-bold py-6 rounded-lg shadow-md max-w-3xl text-center leading-tight font-livvic"
               >
                 Quem somos
+                <div className="mt-4 w-4/4 h-2 bg-[#D21528] rounded-full"
+                 style={{boxShadow: "0 8px 15px rgba(210, 21, 40, 0.3), 0 0 10px rgba(210, 21, 40, 0.1)"}}>
+                </div>
               </div>
               <h1 className="text-2xl font-livvic font-bold leading-relaxed text-yellow-400">
                 Associação Juventudes Contruindo Sonhos
@@ -49,7 +49,7 @@ const About = () => {
                   className="w-32 h-32 object-contain rounded-lg"
                 />
                 <div className="text-white text-center">
-                  <h3 className="text-xl font-bold mb-2 text-yellow-400">Reconhecimento</h3>
+                  <h3 className="text-xl font-bold mb-2 text-yellow-400">Prêmio Itaú-Unicef - 7° edição</h3>
                   <p className="text-gray-200 leading-relaxed">
                     A AJCS foi reconhecida pelo Prêmio Itaú-Unicef por suas ações de inclusão social e fortalecimento da cultura juvenil, destacando-se como referência em projetos sociais na região.
                   </p>

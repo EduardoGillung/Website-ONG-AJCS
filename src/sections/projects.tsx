@@ -37,18 +37,15 @@ const Projects = () => {
   return (
     <section className="pb-[clamp(200px,24vw,340px)] relative overflow-hidden bg-[#171E37] pt-28">
       {/* Título */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2
-          className="mx-auto max-w-lg text-center bg-[#C94300] text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold px-4 sm:px-6 md:px-8 lg:px-12 py-4 sm:py-5 md:py-6 rounded-lg shadow-md mb-8 sm:mb-10 md:mb-12 leading-tight font-livvic"
-          style={{
-            boxShadow:
-              "0 4px 15px rgba(201, 67, 0, 0.4), 0 0 20px rgba(255, 147, 41, 0.2)",
-          }}
-        >
-          Projetos Sociais
-        </h2>
-        <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed text-center">
-        A organização desenvolve projetos de capoeira, futebol e dança com cerca de mais de 200 crianças e adolescentes em comunidades periféricas de Natal, visando combater o trabalho infantil e a evasão escolar.
+        <div className="space-y-6">
+            <div className="text-white text-3xl md:text-4xl font-bold text-center font-livvic ">
+              Projetos Sociais
+                <div className="mt-4 w-1/2 h-2 bg-[#FF5500] rounded-full mx-auto"
+                 style={{ boxShadow: "0 8px 15px rgba(255, 165, 0, 0.3), 0 0 10px rgba(255, 165, 0, 0.1)" }}>
+                </div>
+              </div>
+          <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed text-center">
+          A organização desenvolve projetos de capoeira, futebol e dança com cerca de mais de 200 crianças e adolescentes em comunidades periféricas de Natal, visando combater o trabalho infantil e a evasão escolar.
           </p>
       </div>
 
