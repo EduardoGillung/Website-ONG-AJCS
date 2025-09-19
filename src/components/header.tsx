@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { MobileNav } from "./navigation/mobileNav";
 import Logo from "../assets/Logo.png";
+import { HandHeart } from 'lucide-react';
 
 const Header = () => {
   const navigationItems = [
@@ -82,15 +83,17 @@ const Header = () => {
           <button
             onClick={() => scrollToSection('doar')}
             className="relative overflow-hidden bg-[#D21528] hover:from-[#B81322] hover:to-[#7A0813] 
-            text-white font-bold px-10 py-4 rounded-xl transition-all duration-300 shadow-lg 
-            hover:shadow-xl hover:shadow-[#D21528]/40 transform hover:-translate-y-1 text-md border-1 border-[#B81322]"
+            text-white font-bold px-8 py-3 rounded-xl transition-all duration-300 shadow-lg 
+            hover:shadow-xl hover:shadow-[#D21528]/40 transform hover:-translate-y-1 text-md border
+            flex items-center justify-center space-x-3"
             style={{
               boxShadow: '0 4px 15px rgba(255, 0, 25, 0.3), 0 0 20px rgba(202, 0, 20, 0.1)'
             }}
           >
+            <HandHeart className="w-5 h-5" />
             <span className="relative z-10">Quero Doar</span>
           </button>
-        </div>
+      </div>
 
         {/* Mobile Menu Button */}
         <button
