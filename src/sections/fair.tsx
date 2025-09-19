@@ -9,8 +9,11 @@ import FeiraArtesanato from "../assets/feira-artesanato.jpg";
 
 const Fair = () => {
   return (
-    <section className="bg-white">
-      <div className="mx-auto px-6 max-w-7xl flex items-center justify-center gap-6 sm:gap-8 md:gap-10">
+    <section className="bg-white"
+
+>
+      <div className="mx-auto px-6 max-w-7xl flex items-center justify-center gap-6 sm:gap-8 md:gap-10"
+      >
         <img
           src={LogoFeira}
           alt="logo-feira"
@@ -18,13 +21,13 @@ const Fair = () => {
         />
 
         <div className="flex">
-        <div className="text-[#222D54] text-3xl md:text-4xl font-bold text-center font-livvic ">
+        <div className="text-[#222D54] text-3xl md:text-4xl font-bold text-center font-livvic " 
+        >
               Feira Mãos de Potengi
-                <div className="mt-4 w-full h-2 bg-[#D21528] rounded-full"
+                <div className="mt-4 w-[120%] h-2 bg-[#D21528] rounded-full mx-auto"
                  style={{boxShadow: "0 8px 15px rgba(210, 21, 40, 0.3), 0 0 10px rgba(210, 21, 40, 0.1)"}}>
                 </div>
               </div>
-
         </div>
       </div>
 

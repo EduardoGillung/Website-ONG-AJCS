@@ -15,7 +15,7 @@ import logoreciclagem from "../assets/logo-reciclagem.jpeg";
 const Partners = () => {
   return (
     <>
-      <section className="bg-[#FFD037] pb-16 ">
+      <section className="bg-[#FDD551] pb-16 ">
         {/* Wave divider on top */}
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path fill="#ffffff" fillOpacity="1" d="M0,96L40,133.3C80,171,160,245,240,240C320,235,400,149,480,138.7C560,128,640,192,720,208C800,224,880,192,960,197.3C1040,203,1120,245,1200,240C1280,235,1360,181,1400,154.7L1440,128L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>

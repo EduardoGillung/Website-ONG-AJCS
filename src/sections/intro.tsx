@@ -33,29 +33,6 @@ const Intro = () => {
           <p className="text-white/90 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mt-4 sm:mt-6 max-w-2xl mx-auto">
             Transformando vidas através de projetos sociais e solidariedade
           </p>
-
-          {/* Call-to-action */}
-          <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
-            <button
-              onClick={() => document.getElementById('sobre')?.scrollIntoView({ behavior: 'smooth' })}
-              className="w-full sm:w-auto bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-4 sm:px-6 md:px-8 py-3 sm:py-4
-              rounded-xl transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl text-sm sm:text-base"
-              style={{ boxShadow: "0 4px 15px rgba(255, 193, 7, 0.15), 0 0 20px rgba(255, 215, 0, 0.25)" }}
-              aria-label="Conheça nossa história"
-            >
-              Conheça Nossa História
-            </button>
-            <button
-              onClick={() => document.getElementById('doar')?.scrollIntoView({ behavior: 'smooth' })}
-              className="w-full sm:w-auto border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black
-                font-bold px-4 sm:px-6 md:px-8 py-3 sm:py-4 rounded-xl transition-all duration-300 
-                transform hover:-translate-y-1 text-sm sm:text-base"
-              style={{ boxShadow: "0 4px 15px rgba(255, 193, 7, 0.15), 0 0 20px rgba(255, 215, 0, 0.25)" }}
-              aria-label="Faça uma doação"
-            >
-              Faça uma Doação
-            </button>
-          </div>
         </div>
       </div>
     </section>

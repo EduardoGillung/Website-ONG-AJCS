@@ -32,7 +32,7 @@ const Home = () => {
       </section>
 
       {/* Seção Feira (fundo branco) */}
-      <section id="feira" className="min-h-screen scroll-mt-24 bg-white">
+      <section id="feira" className="min-h-screen scroll-mt-24 bg-white" >
         <Fair />
       </section>
 
