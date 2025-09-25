@@ -65,7 +65,7 @@ const Midia = () => {
 
         {/* Grid de Vídeos */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          {mediaItems.map((item, index) => (
+          {mediaItems.map((item) => (
             <div 
               key={item.id}
               className="group relative bg-white rounded-3xl shadow-xl hover:shadow-2xl overflow-hidden transition-all duration-500 transform hover:-translate-y-3 border border-gray-100"
