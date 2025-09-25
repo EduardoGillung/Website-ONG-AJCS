@@ -65,15 +65,15 @@ const Header = () => {
             <button
             key={item.to}
             onClick={() => scrollToSection(item.to.replace('#', ''))}
-            className="relative font-semibold text-md transition-all duration-300 group cursor-pointer text-[#171E37]"
+            className="relative font-semibold text-md transition-all duration-300 group cursor-pointer text-ong-blue"
           >
             {/* Texto */}
-            <span className="relative z-10 group-hover:text-[#41559E] transition-colors duration-300">
+            <span className="relative z-10 group-hover:text-ong-red transition-colors duration-300">
               {item.label}
             </span>
           
             {/* Underline animado */}
-            <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-[#41559E] group-hover:w-full transition-all duration-500 rounded-full"></span>
+            <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-ong-red group-hover:w-full transition-all duration-500 rounded-full"></span>
 
             </button>
           ))}
@@ -83,9 +83,9 @@ const Header = () => {
         <div className="hidden lg:block">
           <button
             onClick={() => scrollToSection('doar')}
-            className="relative overflow-hidden bg-[#D21528] hover:from-[#B81322] hover:to-[#7A0813] 
-            text-white font-bold px-8 py-3 rounded-xl transition-all duration-300 shadow-lg 
-            hover:shadow-xl hover:shadow-[#D21528]/40 transform hover:-translate-y-1 text-md border
+            className="relative overflow-hidden bg-ong-red hover:from-ong-red-light hover:to-ong-red 
+            text-white font-bold px-8 py-3 rounded-xl transition-all duration-300 shadow-soft 
+            hover:shadow-ong transform hover:-translate-y-1 text-md border
             flex items-center justify-center space-x-3"
             style={{
               boxShadow: '0 4px 15px rgba(255, 0, 25, 0.3), 0 0 20px rgba(202, 0, 20, 0.1)'
@@ -98,7 +98,7 @@ const Header = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden p-3 rounded-xl text-[#171E37] hover:bg-[#171E37]/10 transition-all duration-300 border border-[#171E37]/20 hover:border-[#171E37]/40"
+          className="lg:hidden p-3 rounded-xl text-ong-blue hover:bg-ong-blue/10 transition-all duration-300 border border-ong-blue/20 hover:border-ong-blue/40"
           onClick={() => setMobileMenuOpen(true)}
           aria-label="Abrir menu"
         >

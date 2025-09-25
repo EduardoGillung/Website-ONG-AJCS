@@ -45,16 +45,15 @@ const Midia = () => {
       <div className="mx-auto px-6 max-w-7xl">
         {/* Header da Seção */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-[#D21528] to-[#C94300] rounded-full mb-6 shadow-lg">
+          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-ong-red to-ong-orange rounded-full mb-6 shadow-soft">
             <Play className="w-10 h-10 text-white" />
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-bold text-[#222D54] mb-6 font-livvic">
+          <h2 className="text-4xl md:text-5xl font-bold text-ong-blue-medium mb-6 font-livvic">
             Nossa Mídia
           </h2>
           
-          <div className="w-32 h-2 bg-gradient-to-r from-[#D21528] to-[#C94300] rounded-full mx-auto mb-8"
-               style={{boxShadow: "0 8px 15px rgba(210, 21, 40, 0.3), 0 0 10px rgba(210, 21, 40, 0.1)"}}>
+          <div className="w-32 h-2 bg-gradient-to-r from-ong-red to-ong-orange rounded-full mx-auto mb-8 shadow-ong">
           </div>
           
           <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
@@ -98,7 +97,7 @@ const Midia = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
                     <div className="text-center">
                       <div className="w-16 h-16 bg-white/80 rounded-full flex items-center justify-center mb-4 mx-auto shadow-lg group-hover:scale-110 transition-transform duration-300">
-                        <Play className="w-8 h-8 text-[#D21528] ml-1" />
+                        <Play className="w-8 h-8 text-ong-red ml-1" />
                       </div>
                       <p className="text-gray-600 font-medium">Vídeo em breve</p>
                     </div>
@@ -126,8 +125,8 @@ const Midia = () => {
         </div>
 
         {/* Seção de Call-to-Action */}
-        <div className="bg-gradient-to-r from-[#222D54] to-[#171E37] rounded-3xl p-8 md:p-12 text-center text-white relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-[#D21528]/10 rounded-full -translate-y-32 translate-x-32"></div>
+        <div className="bg-gradient-to-r from-ong-blue-medium to-ong-blue rounded-3xl p-8 md:p-12 text-center text-white relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-ong-red/10 rounded-full -translate-y-32 translate-x-32"></div>
           <div className="absolute bottom-0 left-0 w-48 h-48 bg-yellow-400/10 rounded-full translate-y-24 -translate-x-24"></div>
           
           <div className="relative z-10">
@@ -140,7 +139,7 @@ const Midia = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-[#D21528] to-[#C94300] text-white font-semibold py-4 px-8 rounded-xl hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+              <button className="bg-gradient-to-r from-ong-red to-ong-orange text-white font-semibold py-4 px-8 rounded-xl hover:shadow-ong transform hover:scale-105 transition-all duration-300">
                 Ver Mais Vídeos
               </button>
               <button className="border-2 border-white/30 text-white font-semibold py-4 px-8 rounded-xl hover:bg-white/10 transition-all duration-300">

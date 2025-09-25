@@ -70,30 +70,178 @@ const Partners = () => {
               </div>
             </div>
           </div>
-          <div className="max-w-3xl mx-auto text-center mt-8">
-        <h2 className="text-3xl font-bold text-[#171E37] mb-4">
-          Junte-se a Nós
-        </h2>
-        <p className="text-lg text-gray-600 leading-relaxed">
-          Seja parte da transformação! Contribua com seu talento, tempo ou recursos
-          e ajude a construir um futuro mais justo e solidário.  
-          <br />
-          <span className="font-semibold text-gray-800">
-            Sua colaboração faz a diferença!
-          </span>
-        </p>
-      </div>
-      <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">    
-        <button
-          onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
-          className="w-full sm:w-auto bg-yellow-100 hover:bg-yellow-500 border border-[#171E37] text-black font-bold px-4 sm:px-6 md:px-8 py-3 sm:py-4
-          rounded-xl transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl text-sm sm:text-base"
-          style={{ boxShadow: "0 4px 15px rgba(255, 193, 7, 0.15), 0 0 20px rgba(255, 215, 0, 0.25)"}}
-          aria-label="Conheça nossa história"
-        >
-          Entrar em Contato
-        </button>
-      </div>
+          {/* Seção Diretoria */}
+          <div className="max-w-6xl mx-auto text-center mt-16 mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#171E37] mb-6 font-livvic">
+              Diretoria
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#D21528] to-[#C94300] rounded-full mx-auto mb-8"></div>
+            <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-12">
+              Conheça as pessoas que lideram nossa missão e trabalham diariamente para transformar vidas através da educação e solidariedade.
+            </p>
+
+            {/* Cards da Diretoria com Animação Automática */}
+            <div className="relative overflow-hidden">
+              <div className="flex gap-6 animate-scroll">
+                {/* Card 1 - Presidente */}
+                <div className="flex-shrink-0 w-80 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 snap-center focus-within:ring-2 focus-within:ring-[#D21528]/50" tabIndex={0}>
+                  <div className="text-center">
+                    <div className="w-24 h-24 bg-gradient-to-br from-[#D21528] to-[#C94300] rounded-full mx-auto mb-4 flex items-center justify-center" role="img" aria-label="Avatar do Presidente">
+                      <span className="text-white font-bold text-2xl" aria-hidden="true">J</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-[#171E37] mb-2">João Silva</h3>
+                    <p className="text-[#D21528] font-semibold mb-3">Presidente</p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Lidera a organização há 5 anos, com vasta experiência em projetos sociais e desenvolvimento comunitário.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 2 - Vice-Presidente */}
+                <div className="flex-shrink-0 w-80 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 snap-center">
+                  <div className="text-center">
+                    <div className="w-24 h-24 bg-gradient-to-br from-[#C94300] to-[#D97706] rounded-full mx-auto mb-4 flex items-center justify-center">
+                      <span className="text-white font-bold text-2xl">M</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-[#171E37] mb-2">Maria Santos</h3>
+                    <p className="text-[#C94300] font-semibold mb-3">Vice-Presidente</p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Especialista em educação e coordenadora de projetos voltados para o desenvolvimento juvenil.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 3 - Tesoureiro */}
+                <div className="flex-shrink-0 w-80 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 snap-center">
+                  <div className="text-center">
+                    <div className="w-24 h-24 bg-gradient-to-br from-[#222D54] to-[#4A5568] rounded-full mx-auto mb-4 flex items-center justify-center">
+                      <span className="text-white font-bold text-2xl">C</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-[#171E37] mb-2">Carlos Oliveira</h3>
+                    <p className="text-[#222D54] font-semibold mb-3">Tesoureiro</p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Responsável pela gestão financeira e transparência dos recursos da organização.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 4 - Secretário */}
+                <div className="flex-shrink-0 w-80 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6">
+                  <div className="text-center">
+                    <div className="w-24 h-24 bg-gradient-to-br from-[#059669] to-[#10B981] rounded-full mx-auto mb-4 flex items-center justify-center">
+                      <span className="text-white font-bold text-2xl">A</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-[#171E37] mb-2">Ana Costa</h3>
+                    <p className="text-[#059669] font-semibold mb-3">Secretária</p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Coordena a comunicação e documentação, mantendo a organização administrativa da AJCS.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Duplicação dos cards para loop infinito */}
+                {/* Card 1 - Presidente (Duplicado) */}
+                <div className="flex-shrink-0 w-80 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6">
+                  <div className="text-center">
+                    <div className="w-24 h-24 bg-gradient-to-br from-[#D21528] to-[#C94300] rounded-full mx-auto mb-4 flex items-center justify-center" role="img" aria-label="Avatar do Presidente">
+                      <span className="text-white font-bold text-2xl" aria-hidden="true">J</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-[#171E37] mb-2">João Silva</h3>
+                    <p className="text-[#D21528] font-semibold mb-3">Presidente</p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Lidera a organização há 5 anos, com vasta experiência em projetos sociais e desenvolvimento comunitário.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 2 - Vice-Presidente (Duplicado) */}
+                <div className="flex-shrink-0 w-80 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6">
+                  <div className="text-center">
+                    <div className="w-24 h-24 bg-gradient-to-br from-[#C94300] to-[#D97706] rounded-full mx-auto mb-4 flex items-center justify-center">
+                      <span className="text-white font-bold text-2xl">M</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-[#171E37] mb-2">Maria Santos</h3>
+                    <p className="text-[#C94300] font-semibold mb-3">Vice-Presidente</p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Especialista em educação e coordenadora de projetos voltados para o desenvolvimento juvenil.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 3 - Tesoureiro (Duplicado) */}
+                <div className="flex-shrink-0 w-80 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6">
+                  <div className="text-center">
+                    <div className="w-24 h-24 bg-gradient-to-br from-[#222D54] to-[#4A5568] rounded-full mx-auto mb-4 flex items-center justify-center">
+                      <span className="text-white font-bold text-2xl">C</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-[#171E37] mb-2">Carlos Oliveira</h3>
+                    <p className="text-[#222D54] font-semibold mb-3">Tesoureiro</p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Responsável pela gestão financeira e transparência dos recursos da organização.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 4 - Secretário (Duplicado) */}
+                <div className="flex-shrink-0 w-80 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6">
+                  <div className="text-center">
+                    <div className="w-24 h-24 bg-gradient-to-br from-[#059669] to-[#10B981] rounded-full mx-auto mb-4 flex items-center justify-center">
+                      <span className="text-white font-bold text-2xl">A</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-[#171E37] mb-2">Ana Costa</h3>
+                    <p className="text-[#059669] font-semibold mb-3">Secretária</p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Coordena a comunicação e documentação, mantendo a organização administrativa da AJCS.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Seção Junte-se a Nós - Design Moderno */}
+          <div className="max-w-4xl mx-auto text-center mt-16">
+            <div className="bg-gradient-to-r from-[#D21528] to-[#C94300] rounded-3xl p-8 md:p-12 text-white relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-32 translate-x-32"></div>
+              <div className="absolute bottom-0 left-0 w-48 h-48 bg-yellow-400/10 rounded-full translate-y-24 -translate-x-24"></div>
+              
+              <div className="relative z-10">
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 font-livvic">
+                  Junte-se a Nós
+                </h2>
+                <p className="text-lg text-white/90 leading-relaxed mb-8 max-w-2xl mx-auto">
+                  Seja parte da transformação! Contribua com seu talento, tempo ou recursos
+                  e ajude a construir um futuro mais justo e solidário.
+                </p>
+                
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <button 
+                    onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
+                    className="group bg-white text-[#D21528] font-bold px-8 py-4 rounded-xl hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-white/50"
+                    aria-label="Navegar para seção de contato"
+                  >
+                    <span className="flex items-center gap-2">
+                      Entrar em Contato
+                      <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </span>
+                  </button>
+                  <button 
+                    className="group border-2 border-white/30 text-white font-semibold px-8 py-4 rounded-xl hover:bg-white/10 hover:border-white/50 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white/50"
+                    aria-label="Saiba como se tornar voluntário"
+                  >
+                    <span className="flex items-center gap-2">
+                      <svg className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                      </svg>
+                      Seja Voluntário
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         
       </section>

@@ -23,3 +23,49 @@
     min-height: 100vh;
   }
 }
+
+@layer utilities {
+  /* Scrollbar personalizado para carrossel */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Animações suaves para carrossel */
+  .snap-x {
+    scroll-snap-type: x mandatory;
+  }
+  
+  .snap-center {
+    scroll-snap-align: center;
+  }
+
+  /* Animação de scroll automático */
+  .animate-scroll {
+    animation: scroll 25s linear infinite;
+    will-change: transform;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Pausar animação no hover */
+  .animate-scroll:hover {
+    animation-play-state: paused;
+  }
+
+  /* Suavizar a animação */
+  .animate-scroll {
+    transition: transform 0.3s ease;
+  }
+}
