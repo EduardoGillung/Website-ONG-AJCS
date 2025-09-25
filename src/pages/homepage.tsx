@@ -4,6 +4,7 @@ import About from "../sections/about";
 import Contact from "../sections/contact";
 import Projects from "../sections/projects";
 import Fair from "../sections/fair";
+import Midia from "../sections/midia";
 import Partners from "../sections/partners";
 import Transparency from "../sections/transparency";
 import Donate from "../sections/donate";
@@ -34,6 +35,11 @@ const Home = () => {
       {/* Seção Feira (fundo branco) */}
       <section id="feira" className="min-h-screen scroll-mt-24 bg-white" >
         <Fair />
+      </section>
+
+      {/* Seção Mídia (fundo branco) */}
+      <section id="midia" className="min-h-screen scroll-mt-24 bg-white">
+        <Midia />
       </section>
 
       {/* Seção Colaboradores */}
