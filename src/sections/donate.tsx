@@ -142,9 +142,8 @@ const Donate = () => {
 
         {/* Call to Action Final */}
         <div className="text-center">
-          <div className="bg-gradient-to-r from-[#D21528] to-[#C94300] rounded-2xl sm:rounded-3xl p-6 sm:p-8 text-white relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-32 h-32 sm:w-64 sm:h-64 bg-white/10 rounded-full -translate-y-16 sm:-translate-y-32 translate-x-16 sm:translate-x-32"></div>
-            <div className="absolute bottom-0 left-0 w-24 h-24 sm:w-48 sm:h-48 bg-yellow-400/10 rounded-full translate-y-12 sm:translate-y-24 -translate-x-12 sm:-translate-x-24"></div>
+          <div className="rounded-2xl sm:rounded-3xl p-6 sm:p-8 text-white relative overflow-hidden">
+
             
             <div className="relative z-10">
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 font-livvic">
