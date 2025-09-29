@@ -63,18 +63,17 @@ const Header = () => {
         <nav className="hidden lg:flex items-center space-x-10">
           {navigationItems.map((item) => (
             <button
-            key={item.to}
-            onClick={() => scrollToSection(item.to.replace('#', ''))}
-            className="relative font-semibold text-md transition-all duration-300 group cursor-pointer text-ong-blue"
-          >
-            {/* Texto */}
-            <span className="relative z-10 group-hover:text-ong-red transition-colors duration-300">
-              {item.label}
-            </span>
+              key={item.to}
+              onClick={() => scrollToSection(item.to.replace('#', ''))}
+              className="relative font-semibold text-md transition-all duration-300 group cursor-pointer text-ong-blue"
+            >
+              {/* Texto */}
+              <span className="relative z-10 group-hover:text-ong-red transition-colors duration-300">
+                {item.label}
+              </span>
           
-            {/* Underline animado */}
-            <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-ong-red group-hover:w-full transition-all duration-500 rounded-full"></span>
-
+              {/* Underline animado */}
+              <span className="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-ong-red group-hover:w-full transition-all duration-500 rounded-full"></span>
             </button>
           ))}
         </nav>
@@ -94,7 +93,7 @@ const Header = () => {
             <HandHeart className="w-5 h-5" />
             <span className="relative z-10">Quero Doar</span>
           </button>
-      </div>
+        </div>
 
         {/* Mobile Menu Button */}
         <button

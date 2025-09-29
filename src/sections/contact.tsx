@@ -149,41 +149,6 @@ const Contact = () => {
             ></iframe>
           </div>
         </div>
-
-        {/* Call to Action Final */}
-        <div className="text-center">
-          <div className="bg-gradient-to-r from-[#D21528] to-[#C94300] rounded-2xl sm:rounded-3xl p-6 sm:p-8 text-white relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-32 h-32 sm:w-64 sm:h-64 bg-white/10 rounded-full -translate-y-16 sm:-translate-y-32 translate-x-16 sm:translate-x-32"></div>
-            <div className="absolute bottom-0 left-0 w-24 h-24 sm:w-48 sm:h-48 bg-yellow-400/10 rounded-full translate-y-12 sm:translate-y-24 -translate-x-12 sm:-translate-x-24"></div>
-            
-            <div className="relative z-10">
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 font-livvic">
-                Pronto para Fazer a Diferença?
-              </h3>
-              <p className="text-sm sm:text-base md:text-lg text-white/90 mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed">
-                Junte-se à nossa missão de transformar vidas através da educação e solidariedade. 
-                Sua participação é fundamental!
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-                <a
-                  href="https://wa.me/5511997776658"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-white text-[#D21528] font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-sm sm:text-base"
-                >
-                  Falar no WhatsApp
-                </a>
-                <a
-                  href="mailto:ajcsconstruindosonhos@org.com.br"
-                  className="border-2 border-white/30 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-white/10 transition-all duration-300 text-sm sm:text-base"
-                >
-                  Enviar Email
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
