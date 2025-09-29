@@ -1,5 +1,5 @@
 import { Play, Calendar, FerrisWheel, Tv, Newspaper } from 'lucide-react';
-import midia1 from '../assets/midia1.png';
+import midia from '../assets/midia.png';
 import midia2 from '../assets/midia2.png';
 import midia3 from '../assets/midia3.png';
 import midia4 from '../assets/midia4.png';
@@ -13,7 +13,7 @@ const mediaItems = [
     color: "from-red-500 to-red-600",
     hoverColor: "group-hover:from-red-400 group-hover:to-red-500",
     category: "Televisão",
-    backgroundImage: midia1
+    backgroundImage: midia
   },
   {
     id: 2,
