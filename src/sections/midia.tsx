@@ -1,8 +1,8 @@
 import { Play, Calendar, FerrisWheel, Tv, Newspaper } from 'lucide-react';
-import media1 from '../assets/media1.png';
-import media2 from '../assets/media2.png';
-import media3 from '../assets/media3.png';
-import media4 from '../assets/media4.png';
+import media1 from '../assets/media1.jpg';
+import media2 from '../assets/media2.jpg';
+import media3 from '../assets/media3.jpg';
+import media4 from '../assets/media4.jpg';
 
 const mediaItems = [
   {
