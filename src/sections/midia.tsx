@@ -1,8 +1,8 @@
 import { Play, Calendar, FerrisWheel, Tv, Newspaper } from 'lucide-react';
-import midia1 from '../assets/midia1.png';
-import midia2 from '../assets/midia2.png';
-import midia3 from '../assets/midia3.png';
-import midia4 from '../assets/midia4.png';
+import media1 from '../assets/media1.png';
+import media2 from '../assets/media2.png';
+import media3 from '../assets/media3.png';
+import media4 from '../assets/media4.png';
 
 const mediaItems = [
   {
@@ -13,7 +13,7 @@ const mediaItems = [
     color: "from-red-500 to-red-600",
     hoverColor: "group-hover:from-red-400 group-hover:to-red-500",
     category: "Televisão",
-    backgroundImage: midia1,
+    backgroundImage: media1,
     link: "https://agorarn.com.br/ultimas/feira-maos-do-potengi-reune-artesaos-empreendedores-e-turistas-no-coracao-historico-de-natal/"
   },
   {
@@ -24,7 +24,7 @@ const mediaItems = [
     color: "from-blue-500 to-blue-600",
     hoverColor: "group-hover:from-blue-400 group-hover:to-blue-500",
     category: "Jornalismo",
-    backgroundImage: midia2,
+    backgroundImage: media2,
     link: "https://www.instagram.com/ajcs.construindosonhos/"
   },
   {
@@ -35,7 +35,7 @@ const mediaItems = [
     color: "from-green-500 to-green-600",
     hoverColor: "group-hover:from-green-400 group-hover:to-green-500",
     category: "Eventos",
-    backgroundImage: midia3,
+    backgroundImage: media3,
     link: "https://www.instagram.com/reel/DNYLfgzOn9q/"
   },
   {
@@ -46,7 +46,7 @@ const mediaItems = [
     color: "from-[#FF6D24] to-[#FF8C4B]",
     hoverColor: "group-hover:from-[#FF8C4B] group-hover:to-[#FFA270]",
     category: "Atrações",
-    backgroundImage: midia4,
+    backgroundImage: media4,
     link: "https://www.instagram.com/p/DOoIuBPDRX6/"
   }
 ];
