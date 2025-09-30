@@ -13,7 +13,8 @@ const mediaItems = [
     color: "from-red-500 to-red-600",
     hoverColor: "group-hover:from-red-400 group-hover:to-red-500",
     category: "Televisão",
-    backgroundImage: midia1
+    backgroundImage: midia1,
+    link: "https://agorarn.com.br/ultimas/feira-maos-do-potengi-reune-artesaos-empreendedores-e-turistas-no-coracao-historico-de-natal/"
   },
   {
     id: 2,
@@ -23,7 +24,8 @@ const mediaItems = [
     color: "from-blue-500 to-blue-600",
     hoverColor: "group-hover:from-blue-400 group-hover:to-blue-500",
     category: "Jornalismo",
-    backgroundImage: midia2
+    backgroundImage: midia2,
+    link: "https://www.instagram.com/ajcs.construindosonhos/"
   },
   {
     id: 3,
@@ -33,7 +35,8 @@ const mediaItems = [
     color: "from-green-500 to-green-600",
     hoverColor: "group-hover:from-green-400 group-hover:to-green-500",
     category: "Eventos",
-    backgroundImage: midia3
+    backgroundImage: midia3,
+    link: "https://www.instagram.com/reel/DNYLfgzOn9q/"
   },
   {
     id: 4,
@@ -43,7 +46,8 @@ const mediaItems = [
     color: "from-[#FF6D24] to-[#FF8C4B]",
     hoverColor: "group-hover:from-[#FF8C4B] group-hover:to-[#FFA270]",
     category: "Atrações",
-    backgroundImage: midia4
+    backgroundImage: midia4,
+    link: "https://www.instagram.com/p/DOoIuBPDRX6/"
   }
 ];
 
@@ -115,7 +119,10 @@ const Midia = () => {
                   {item.description}
                 </p>
 
-                <button className={`mt-6 w-full py-3 px-6 bg-gradient-to-r ${item.color} text-white font-semibold rounded-xl hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2`}>
+                <button 
+                  onClick={() => window.open(item.link, '_blank')}
+                  className={`mt-6 w-full py-3 px-6 bg-gradient-to-r ${item.color} text-white font-semibold rounded-xl hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2`}
+                >
                   <Play className="w-5 h-5" />
                   <span>Assistir Vídeo</span>
                 </button>
