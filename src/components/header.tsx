@@ -36,20 +36,20 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 shadow-md transition-all duration-500 ${
+      className={`fixed top-4 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-500 ${
         scrolled 
-          ? "bg-white backdrop-blur-xl shadow-lg shadow-gray-200/70" 
-          : "bg-white backdrop-blur-md shadow-lg shadow-gray-200/70"
+          ? "w-full max-w-7xl bg-white/95 backdrop-blur-xl shadow-lg rounded-2xl mx-4" 
+          : "w-full max-w-7xl bg-white/90 backdrop-blur-md shadow-lg rounded-2xl mx-4"
       }`}
     >
-      <div className="container mx-auto px-6 max-w-7xl flex items-center justify-between h-20">
+      <div className="container mx-auto px-6 max-w-full flex items-center justify-between h-20">
         {/* Logo */}
         <button 
           onClick={() => scrollToSection('intro')}
           className="flex items-center space-x-4 group cursor-pointer"
         >
           <div className="flex items-center space-x-3">
-            <div className="w-16 h-16 rounded-xl flex items-center justify-center">
+            <div className="w-12 h-12 rounded-xl flex items-center justify-center">
               <img 
                 src={Logo} 
                 alt="Associação Juventude Construindo Sonhos Logo" 
@@ -60,15 +60,15 @@ const Header = () => {
         </button>
 
         {/* Navigation */}
-        <nav className="hidden lg:flex items-center space-x-10">
+        <nav className="hidden lg:flex items-center space-x-8">
           {navigationItems.map((item) => (
             <button
               key={item.to}
               onClick={() => scrollToSection(item.to.replace('#', ''))}
-              className="relative font-semibold text-md transition-all duration-300 group cursor-pointer text-ong-blue"
+              className="relative font-semibold text-md transition-all duration-300 group cursor-pointer text-gray-700 hover:text-ong-red"
             >
               {/* Texto */}
-              <span className="relative z-10 group-hover:text-ong-red transition-colors duration-300">
+              <span className="relative z-10 transition-colors duration-300">
                 {item.label}
               </span>
           
@@ -82,26 +82,23 @@ const Header = () => {
         <div className="hidden lg:block">
           <button
             onClick={() => scrollToSection('doar')}
-            className="relative overflow-hidden bg-ong-red hover:from-ong-red-light hover:to-ong-red 
-            text-white font-bold px-8 py-3 rounded-xl transition-all duration-300 shadow-soft 
-            hover:shadow-ong transform hover:-translate-y-1 text-md border
-            flex items-center justify-center space-x-3"
-            style={{
-              boxShadow: '0 4px 15px rgba(255, 0, 25, 0.3), 0 0 20px rgba(202, 0, 20, 0.1)'
-            }}
+            className="relative overflow-hidden bg-ong-red hover:bg-ong-red-dark 
+            text-white font-bold px-6 py-2.5 rounded-xl transition-all duration-300 shadow-md
+            hover:shadow-lg transform hover:-translate-y-0.5 text-md border
+            flex items-center justify-center space-x-2"
           >
-            <HandHeart className="w-5 h-5" />
+            <HandHeart className="w-4 h-4" />
             <span className="relative z-10">Quero Doar</span>
           </button>
         </div>
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden p-3 rounded-xl text-ong-blue hover:bg-ong-blue/10 transition-all duration-300 border border-ong-blue/20 hover:border-ong-blue/40"
+          className="lg:hidden p-2 rounded-xl text-gray-700 hover:bg-gray-100 transition-all duration-300 border border-gray-200 hover:border-gray-300"
           onClick={() => setMobileMenuOpen(true)}
           aria-label="Abrir menu"
         >
-          <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
